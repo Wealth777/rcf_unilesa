@@ -1,0 +1,220 @@
+.event-carousel {
+    width: 100%;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffffff, #b6b3e9);
+    color: #fff;
+    overflow: hidden;
+}
+
+.carousel-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 6rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+.event-card {
+    margin-left: 70px;
+    flex: 0 0 320px;
+    background: rgba(7, 80, 236, 0.267);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 24, 24, 0.068);
+    border-radius: 20px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.event-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.event-image {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.event-card:hover .overlay {
+    opacity: 1;
+}
+
+.details-btn {
+    background: linear-gradient(135deg, #2563eb, #581c87);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.details-btn:hover {
+    background: linear-gradient(135deg, #1e40af, #4c1d95);
+}
+
+.event-content {
+    padding: 15px 20px 20px;
+}
+
+.event-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.event-info {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.event-info i {
+    color: #60a5fa;
+    margin-right: 6px;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.See-more {
+    padding: 5px;
+    background: linear-gradient(135deg, #1e40af, #4c1d95);
+    color: white;
+    border-radius: 40px;
+    height: 40px;
+    width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    float: right;
+    margin-right: 320px;
+}
+
+.See-more:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #4c1d95, #1e40af);
+    transition: transform 0.3s ease, color 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: green;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .event-card {
+        flex: 0 0 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+
+    .event-card {
+        flex: 0 0 260px;
+    }
+
+    .event-content h3 {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+.carousel-container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0 20px 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel-container::-webkit-scrollbar {
+    height: 6px;
+    background: transparent;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 255, 0.2);
+    border-radius: 10px;
+}
+
+
+.carousel-container>.event-card:first-child {
+    scroll-margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        justify-content: flex-start;
+        scroll-padding-left: 20px;
+    }
+
+    .event-card {
+        flex: 0 0 85%;
+        margin-left: 0;
+    }
+
+    .See-more {
+        margin-right: 19px;
+    }
+
+}
+
+
+/* 1. All events both page buh just 2 weeks past events
+2. Hmm a model will be better
+3. Yes all buh the button should be join live and that will be for only present event
+4. Grid
+5. Yes */

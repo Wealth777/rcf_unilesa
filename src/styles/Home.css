@@ -1,0 +1,182 @@
+.carousel {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  margin-top: 86.4px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: 90%;
+  max-width: 800px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-caption h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.our-mission-section {
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.container div h4{
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.works{
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+  width: 100%;
+  height: 400px;
+  max-height: 500px;
+}
+
+.works .work-cont{
+  padding: 40px;
+}
+
+
+.works .work-cont h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.works .work-cont h6{
+  font-size: 19px;
+  color: aliceblue;
+}
+
+.work-cont div{
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.work-cont div h5{
+  color: wheat;
+  font-size: 16px;
+}
+
+.work-cont button{
+    padding: 7px;
+    background: linear-gradient(135deg, #1e40af, #4c1d95);
+    color: white;
+    border-radius: 40px;
+    height: 45px;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    float: right;
+}
+
+.work-cont button:hover{
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #4c1d95, #1e40af);
+    transition: transform 0.3s ease, color 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: green;
+}
+
+@media (max-width: 992px) {
+  .carousel {
+    height: 60vh;
+  }
+
+  .carousel-inner img {
+    height: 60vh;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 50vh;
+  }
+
+  .carousel-inner img {
+    height: 50vh;
+  }
+
+  .carousel-caption {
+    width: 95%;
+    padding: 0.5rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 45vh;
+  }
+
+  .carousel-inner img {
+    height: 45vh;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
