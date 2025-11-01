@@ -1,0 +1,150 @@
+main {
+  margin-top: 90px;
+}
+
+.events-page {
+  background-color: #f8fafc;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.events1 {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.events1:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.events-img-cont {
+  flex: 0 0 30%;
+  height: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.events-img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.events1:hover .events-img-cont img {
+  transform: scale(1.05);
+}
+
+.events1 div h3 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.events1 div h4 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+  letter-spacing: 5px;
+}
+
+.events1 div p {
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+}
+
+.events1 .Date-cont {
+  display: flex;
+  gap: 2rem;
+}
+
+.events1 div h5 {
+  color: #475569;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #1e40af, #4c1d95);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  float: right;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #4c1d95, #1e40af);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: #22c55e;
+}
+
+@media (max-width: 992px) {
+  .events1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .events-img-cont {
+    width: 100%;
+    height: 250px;
+  }
+
+  .events1 div h3 {
+    font-size: 1.3rem;
+  }
+
+  .events1 div p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 70px;
+  }
+
+  .events-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .events1 {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .events-img-cont {
+    height: 200px;
+  }
+
+  .events1 div h3 {
+    font-size: 1.2rem;
+  }
+
+  .events1 div p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}

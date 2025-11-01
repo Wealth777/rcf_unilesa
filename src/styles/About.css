@@ -1,0 +1,144 @@
+.about-page {
+  margin-top: 90px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.hero-image {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #38bdf8;
+}
+
+.hero-text h3,
+.hero-text h4 {
+  margin-top: 8px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+
+.about-section {
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #facc15;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #000;
+  text-align: justify;
+}
+
+
+.leaders-section {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.leaders-section h2 {
+  color: #fbbf24;
+  margin-bottom: 2rem;
+}
+
+.leaders-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.leader-card {
+  width: 300px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.leader-card:hover {
+  transform: translateY(-6px);
+}
+
+.leader-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.leader-info {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.leader-info h3 {
+  color: #38bdf8;
+  margin-bottom: 4px;
+}
+
+.leader-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .leader-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-card {
+    width: 100%;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+}

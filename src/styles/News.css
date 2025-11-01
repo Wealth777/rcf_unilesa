@@ -1,0 +1,142 @@
+main {
+  margin-top: 90px;
+}
+
+.news-page {
+  background-color: #f8fafc;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Each News Item */
+.news1 {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.news1:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container */
+.news-img-cont {
+  flex: 0 0 30%;
+  height: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.news-img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.news1:hover .news-img-cont img {
+  transform: scale(1.05);
+}
+
+/* Text Section */
+.news1 div h3 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.news1 div p {
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+}
+
+.news1 div h5 {
+  color: #475569;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Button */
+button {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #1e40af, #4c1d95);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  float: right;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #4c1d95, #1e40af);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: #22c55e;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .news1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news-img-cont {
+    width: 100%;
+    height: 250px;
+  }
+
+  .news1 div h3 {
+    font-size: 1.3rem;
+  }
+
+  .news1 div p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 70px;
+  }
+
+  .news-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .news1 {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .news-img-cont {
+    height: 200px;
+  }
+
+  .news1 div h3 {
+    font-size: 1.2rem;
+  }
+
+  .news1 div p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
