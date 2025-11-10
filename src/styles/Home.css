@@ -18,15 +18,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  /* color: rgb(245, 8, 8); */
+  text-shadow: 0 2px 8px #22c55e;
   padding: 1rem;
   width: 90%;
   max-width: 800px;
+  font-family: sans-serif;
+}
+
+.carousel-caption h1 {
+  color: #22c55e;
+  text-shadow: none;
 }
 
 .carousel-caption h5 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -35,10 +41,12 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #FFD700;
+  text-shadow: none;
 }
 
 .carousel-caption p {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -50,16 +58,18 @@
 }
 
 .container div h4 {
-  font-weight: 600;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900;
+  font-family: sans-serif;
   letter-spacing: 2px;
+  color: rgb(8, 104, 5);
 }
 
 .works {
   background: linear-gradient(135deg, #0f172a, #1e1b4b);
   width: 100%;
   padding: 60px 20px;
-  color: white;
+  color: rgb(8, 104, 5);
+  height: 550px;
 }
 
 .works .work-cont {
@@ -69,9 +79,10 @@
 }
 
 .works .work-cont h4 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
   letter-spacing: 2px;
-  color: white;
+  color: #fff;
+  font-weight: 900;
 }
 
 .works .work-cont h6 {
@@ -95,7 +106,7 @@
 .work-cont button {
   margin-top: 2rem;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #1e40af, #4c1d95);
+  background: #FFD700;
   color: white;
   border: none;
   border-radius: 40px;
@@ -105,12 +116,112 @@
   transition: all 0.3s ease;
 }
 
+.work-cont button::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #007BFF, #FFD700);
+  transition: width 0.3s ease;
+}
+
+.work-cont button:hover::after {
+  width: 80%;
+  margin-left: 15px;
+}
+
 .work-cont button:hover {
   transform: translateY(-5px);
-  background: linear-gradient(135deg, #4c1d95, #1e40af);
+  background: #000000;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  color: #22c55e;
+  color: white;
 }
+
+.accpectChrist {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.accpectChrist .container div h2,
+.accpectChrist .container div h4 {
+  color: navy;
+  font-family: sans-serif !important;
+  font-weight: 800;
+}
+
+.accordion {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: #FFD700;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 1rem 1.25rem;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #222 !important;
+  color: #fff;
+  box-shadow: inset 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  opacity: 0.9;
+  color: #f0f8ff;
+  background: #222 !important;
+
+}
+
+.accordion-body {
+  background: #f9fafb;
+  color: #1e293b;
+  padding: 1.25rem;
+  line-height: 1.6;
+  font-size: 0.98rem;
+  box-shadow: 20px 20px 20px 20px #000000;
+}
+
+.accordion-body p {
+  margin-bottom: 0;
+}
+
+.accordion-collapse {
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .accordion-button {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.95rem;
+  }
+}
+
 
 @media (max-width: 992px) {
   .carousel {
@@ -131,6 +242,11 @@
 
   .carousel-caption p {
     font-size: 1.1rem;
+  }
+
+  .works {
+    height: 570px;
+    padding-bottom: 50px;
   }
 }
 
@@ -161,14 +277,20 @@
     font-size: 1rem;
   }
 
-    .work-cont div {
-    flex-direction: column;
+  .works {
+    height: 670px;
+    padding-bottom: 50px;
+  }
+
+  .work-cont div {
+    /* flex-direction: column; */
     align-items: center;
     gap: 1.5rem;
   }
 
   .work-cont button {
-    width: 80%;
+    width: 60%;
+    float: none;
   }
 }
 
@@ -189,8 +311,13 @@
   .carousel-caption p {
     font-size: 0.9rem;
   }
+
   .works .work-cont h6 {
     font-size: 15px;
+  }
+
+  .works {
+    height: auto;
   }
 
 }

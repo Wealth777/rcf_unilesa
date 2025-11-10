@@ -1,5 +1,6 @@
 main {
-  margin-top: 90px;
+  margin-top: 120px;
+  margin-bottom: 50px;
 }
 
 .news-page {
@@ -10,7 +11,6 @@ main {
   gap: 2rem;
 }
 
-/* Each News Item */
 .news1 {
   background: #ffffff;
   border-radius: 16px;
@@ -27,7 +27,6 @@ main {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Container */
 .news-img-cont {
   flex: 0 0 30%;
   height: 220px;
@@ -46,7 +45,6 @@ main {
   transform: scale(1.05);
 }
 
-/* Text Section */
 .news1 div h3 {
   font-size: 1.4rem;
   color: #1e3a8a;
@@ -64,12 +62,19 @@ main {
   color: #475569;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  margin-top: 40px;
 }
 
-/* Button */
+.news1 div .name {
+  color: #475569;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
 button {
   padding: 10px 24px;
-  background: linear-gradient(135deg, #1e40af, #4c1d95);
+  background: #FFD700;
   color: white;
   border: none;
   border-radius: 40px;
@@ -80,14 +85,29 @@ button {
   float: right;
 }
 
-button:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(135deg, #4c1d95, #1e40af);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  color: #22c55e;
+button::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #007BFF, #FFD700);
+  transition: width 0.3s ease;
 }
 
-/* Responsive Design */
+button:hover::after {
+  width: 80%;
+  margin-left: 15px;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background: #222;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
 @media (max-width: 992px) {
   .news1 {
     flex-direction: column;

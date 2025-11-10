@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="container-fluid navCont">
+      <div className="container navCont">
         <div className="elements">
           <img src={navLogo} className="navbar-brand" alt="Logo" />
 
@@ -24,11 +24,11 @@ export default function Navbar() {
             <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link to="/aboutus" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link>
             <Link to="/gallery" className="nav-link" onClick={() => setMenuOpen(false)}>Gallery</Link>
-            <Link to="/events" className="nav-link" onClick={() => setMenuOpen(false)}>Events</Link>
-            <Link to="/sermon" className="nav-link" onClick={() => setMenuOpen(false)}>Sermons</Link>
-            <Link to="/testimonies&prayers" className="nav-link" onClick={() => setMenuOpen(false)}>Testimonies</Link>
+            <Link to="/events" className="nav-link" onClick={() => setMenuOpen(false)}>Programs</Link>
+            {/* <Link to="/sermon" className="nav-link" onClick={() => setMenuOpen(false)}>Sermons</Link>
+            <Link to="/testimonies&prayers" className="nav-link" onClick={() => setMenuOpen(false)}>Testimonies</Link> */}
             <Link to="/news" className="nav-link" onClick={() => setMenuOpen(false)}>News</Link>
-            <Link to="/joinus" className="nav-link" onClick={() => setMenuOpen(false)}>Join Us</Link>
+            {/* <Link to="/joinus" className="nav-link" onClick={() => setMenuOpen(false)}>Join Us</Link> */}
           </div>
         </div>
       </div>

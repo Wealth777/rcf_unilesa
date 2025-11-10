@@ -14,11 +14,11 @@ export default function Footer() {
                             <Link to="/" className="footer-link">Home</Link>
                             <Link to="/aboutus" className="footer-link">About</Link>
                             <Link to="/gallery" className="footer-link">Gallery</Link>
-                            <Link to="/events" className="footer-link">Events</Link>
-                            <Link to="/sermon" className="footer-link">Sermons</Link>
-                            <Link to="/testimonies&prayers" className="footer-link">Testimonies</Link>
+                            <Link to="/events" className="footer-link">Programs</Link>
+                            {/* <Link to="/sermon" className="footer-link">Sermons</Link> */}
+                            {/* <Link to="/testimonies&prayers" className="footer-link">Testimonies</Link> */}
                             <Link to="/news" className="footer-link">News</Link>
-                            <Link to="/joinus" className="footer-link">Join Us</Link>
+                            {/* <Link to="/joinus" className="footer-link">Join Us</Link> */}
                         </div>
                     </div>
 

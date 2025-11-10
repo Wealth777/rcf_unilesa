@@ -37,9 +37,6 @@ export default function QuoteCard() {
           <div key={item.id} className="quote-card">
             <div className="quote-image">
               <img src={item.imageUrl} alt={item.author} />
-              <div className="overlay">
-                <button className="details-btn">View Quote</button>
-              </div>
             </div>
 
             <div className="quote-content">

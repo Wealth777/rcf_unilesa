@@ -24,8 +24,9 @@ import image18 from "../assets/G-2 (3).jpg";
 import image19 from "../assets/G-1 (29).jpg";
 import image20 from "../assets/eer (1).JPG";
 
-// video
-import video from '../assets/Wolf.King.S02E08.(NKIRI.COM).mkv' 
+// const video = [
+  
+// ]
 
 const images = [
   image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12,
@@ -43,7 +44,7 @@ export default function Gallery() {
           transition={{ duration: 0.8 }}
         >
           <h3>📸 Our Images</h3>
-          <p>Moments captured during our fellowship events</p>
+          <p>Moments captured during our fellowship programs</p>
         </motion.div>
 
         <motion.div
@@ -66,35 +67,35 @@ export default function Gallery() {
       </section>
 
 
-      <section className="gallery-section container">
-        <motion.div
-          className="header"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h3>🎥 Our Videos</h3>
-          <p>Watch highlights and messages from our past gatherings</p>
-        </motion.div>
+        {/* <section className="gallery-section container">
+          <motion.div
+            className="header"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h3>🎥 Our Videos</h3>
+            <p>Watch highlights and messages from our past gatherings</p>
+          </motion.div>
 
-        <motion.div
-          className="videos-grid"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          {[...Array(3)].map((_, i) => (
-            <motion.div
-              className="video-card"
-              key={i}
-              whileHover={{ scale: 1.03 }}
-              transition={{ type: "spring", stiffness: 120 }}
-            >
-              <video src={video} controls />
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
+          <motion.div
+            className="videos-grid"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 1 }}
+          >
+            {[...Array(3)].map((_, i) => (
+              <motion.div
+                className="video-card"
+                key={i}
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 120 }}
+              >
+                <video src={video} controls />
+              </motion.div>
+            ))}
+          </motion.div>
+        </section> */}
     </main>
   );
 }

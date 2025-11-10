@@ -36,15 +36,12 @@ const events = [
 const EventsCard = () => {
   return (
     <section className="event-carousel">
-      <h2 className="carousel-title">Upcoming Events</h2>
+      <h2 className="carousel-topic">Upcoming Programs</h2>
       <div className="carousel-container">
         {events.map((event) => (
           <div key={event.id} className="event-card">
             <div className="event-image">
               <img src={event.imageUrl} alt={event.title} />
-              <div className="overlay">
-                <button className="details-btn">View Details</button>
-              </div>
             </div>
 
             <div className="event-content">

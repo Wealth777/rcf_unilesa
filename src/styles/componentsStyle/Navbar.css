@@ -1,6 +1,6 @@
 .navbar {
   background: linear-gradient(135deg, #2563EB, #581C87);
-  padding: 0.8rem 1.2rem;
+  padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.navbar-brand {
+.elements .navbar-brand {
   width: 70px;
   height: auto;
   object-fit: contain;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-.nav-link {
+.elements .nav-link {
   position: relative;
   color: white;
   font-weight: 600;
@@ -47,7 +47,7 @@
   bottom: -3px;
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #007BFF, #FF6B00);
+  background: linear-gradient(90deg, #007BFF, #FFD700) !important;
   transition: width 0.3s ease;
 }
 
@@ -57,7 +57,7 @@
 
 .nav-link:hover {
   transform: translateY(-3px);
-  color: #FF6B00;
+  color: #FFD700;
 }
 
 .navbar-toggler {

@@ -58,16 +58,17 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #007BFF, #FF6B00);
+  background: linear-gradient(90deg, #007BFF, #FFD700);
   transition: width 0.3s ease;
 }
 
 .footer-link:hover::after {
-  width: 100%;
+  width: 50%;
 }
 
 .footer-link:hover {
   transform: translateY(-3px);
+  color: #FFD700;
 }
 
 

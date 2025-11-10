@@ -17,8 +17,8 @@ import Loader from './components/Loader'
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
-  const location = useLocation();
+  // const [loading, setLoading] = useState(true);
+  // const location = useLocation();
 
 
   // useEffect(() => {
@@ -27,13 +27,13 @@ function App() {
   //   return () => clearTimeout(timer);
   // }, []);
 
-  useEffect(() => {
-    setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   const timer = setTimeout(() => setLoading(false), 1500);
+  //   return () => clearTimeout(timer);
+  // }, [location.pathname]);
 
-  if (loading) return <Loader />;
+  // if (loading) return <Loader />;
 
   return (
     <>
@@ -46,10 +46,10 @@ function App() {
         <Route path='/aboutus' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/events' element={<Events />} />
-        <Route path='/sermon' element={<Sermons />} />
-        <Route path='/testimonies&prayers' element={<Testimonies />} />
+        {/* <Route path='/sermon' element={<Sermons />} /> */}
+        {/* <Route path='/testimonies&prayers' element={<Testimonies />} /> */}
         <Route path='/news' element={<News />} />
-        <Route path='/joinus' element={<JoinUs />} />
+        {/* <Route path='/joinus' element={<JoinUs />} /> */}
         <Route path='/join.work.force' element={<WorkerFrom />} />
         <Route path='*' element={<PageNotFound />} />
         {/* <Route path='/l' element={<Loader/>} /> */}
