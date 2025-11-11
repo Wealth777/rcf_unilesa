@@ -17,23 +17,23 @@ import Loader from './components/Loader'
 
 function App() {
 
-  // const [loading, setLoading] = useState(true);
-  // const location = useLocation();
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
 
-  // useEffect(() => {
-  //   // simulate loading time
-  //   const timer = setTimeout(() => setLoading(false), 3000);
-  //   return () => clearTimeout(timer);
-  // }, []);
+  useEffect(() => {
+    // simulate loading time
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   const timer = setTimeout(() => setLoading(false), 1500);
-  //   return () => clearTimeout(timer);
-  // }, [location.pathname]);
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
 
-  // if (loading) return <Loader />;
+  if (loading) return <Loader />;
 
   return (
     <>

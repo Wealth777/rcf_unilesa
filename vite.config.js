@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.mkv'],
-  base: process.env.VITE_BASE_PATH || '/rcf_unilesa',
+  // base: process.env.VITE_BASE_PATH || '/rcf_unilesa',
 })

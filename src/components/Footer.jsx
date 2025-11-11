@@ -38,15 +38,15 @@ export default function Footer() {
                             <div className="footer-icons-block">
                                 <div className="icon-block">
                                     <i className="bi bi-facebook"></i>
-                                    <span>RCF University of ILESA </span>
+                                    <a href="https://www.facebook.com/rcfoscoedilesa" target="_blank" rel="noopener noreferrer">RCF University of ILESA</a>
                                 </div>
                                 <div className="icon-block">
                                     <i className="bi bi-instagram"></i>
-                                    <span>rcfunilesa</span>
+                                    <a href="https://www.instagram.com/rcfunilesa/" target="_blank" rel="noopener noreferrer">rcfunilesa</a>
                                 </div>
                                 <div className="icon-block">
                                     <i className="bi bi-tiktok"></i>
-                                    <span>@rcfunilesa</span>
+                                    <a href="https://www.tiktok.com/@rcfunilesa" target="_blank" rel="noopener noreferrer"><span>@rcfunilesa</span></a>
                                 </div>
                             </div>
                         </div>
