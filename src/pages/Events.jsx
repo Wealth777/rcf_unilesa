@@ -30,7 +30,6 @@ export default function Events() {
                   <p>RCF AUDITORIUM</p>
                 </div>
               </div>
-
               {/* <button>Read More</button> */}
             </div>
           </div>

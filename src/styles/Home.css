@@ -69,7 +69,7 @@
   width: 100%;
   padding: 60px 20px;
   color: rgb(8, 104, 5);
-  height: 550px;
+  height: 450px;
 }
 
 .works .work-cont {
@@ -86,7 +86,7 @@
 }
 
 .works .work-cont h6 {
-  font-size: 18px;
+  font-size: 15px;
   color: #f0f8ff;
   margin-bottom: 2rem;
 }
@@ -100,7 +100,7 @@
 
 .work-cont div h5 {
   color: wheat;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .work-cont button {

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/componentsStyle/QuoteCard.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const quotes = [
   {
@@ -29,12 +31,20 @@ const quotes = [
 ];
 
 export default function QuoteCard() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      mirror: true
+    });
+  }, []);
+
   return (
     <section className="quote-carousel">
       <h2 className="carousel-title">Inspiring Quotes</h2>
       <div className="carousel-container">
         {quotes.map((item) => (
-          <div key={item.id} className="quote-card">
+          <div key={item.id} className="quote-card" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1000">
             <div className="quote-image">
               <img src={item.imageUrl} alt={item.author} />
             </div>

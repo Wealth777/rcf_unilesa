@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../styles/componentsStyle/EventCard.css'
 import { Link } from "react-router-dom";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const events = [
   {
@@ -56,12 +57,21 @@ const events = [
 // ];
 
 const EventsCard = () => {
+
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      mirror: true
+    });
+  }, []);
+
+
   return (
     <section className="event-carousel">
       <h2 className="carousel-topic">Upcoming Programs</h2>
       <div className="carousel-container">
         {events.map((event) => (
-          <div key={event.id} className="event-card">
+          <div key={event.id} className="event-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <div className="event-image">
               <img src={event.imageUrl} alt={event.title} />
             </div>

@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/About.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 import HeroImg from '../assets/20250219_203324.png'
 import bibleStudy from '../assets/exco2.jpg'
 import Gen from '../assets/exco1.jpg'
@@ -24,8 +27,18 @@ import Deco from '../assets/Decoration.jpg'
 import AW from '../assets/aw.jpg'
 import TC from '../assets/TC.jpg'
 import sanitation from '../assets/sanita.jpg'
- 
+import USH from '../assets/ushahe.jpg' 
+
 export default function About() {
+
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      mirror: true
+    });
+  }, []);
+
+
   return (
     <>
 
@@ -42,84 +55,44 @@ export default function About() {
 
         <div className="container about-section">
           <h2>How We Started</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ipsa eos eum maiores, pariatur molestias ipsum eaque illum! Deleniti obcaecati ratione incidunt magni exercitationem accusantium. Error vel corporis animi reprehenderit!
-            Labore blanditiis aperiam architecto! Natus placeat porro dolorem quos aperiam possimus. Cupiditate beatae aliquid delectus culpa sed! Eos vel incidunt aliquid amet, natus id dignissimos maiores, quam ab inventore ipsam!
-            Sunt, eligendi amet iusto accusantium voluptas aspernatur reprehenderit itaque? Aut porro voluptatum voluptas sed perspiciatis, accusantium repellat quidem error, repudiandae expedita ab sit debitis corrupti nihil aliquid voluptate soluta similique.
-            Numquam commodi rem laboriosam quia quo voluptates iure magnam quos, mollitia, neque rerum officia nostrum illo aliquam. Eligendi, magnam excepturi veritatis exercitationem odio dolorem libero ut voluptatum minima distinctio tempora.
-            Earum dolorum necessitatibus facilis architecto dolores unde quas, obcaecati ut animi officia reiciendis dolore quo quidem? Velit laudantium natus aspernatur! Doloremque id ut, quas debitis iste quod non eius itaque.
-            Culpa inventore qui, corporis optio, a praesentium, id maxime numquam perferendis dolorem unde asperiores eaque est saepe velit fuga tenetur molestiae. Animi sapiente voluptas asperiores ipsum, eaque modi fugiat delectus!
-            Sequi quaerat nostrum tenetur deleniti maiores mollitia vel recusandae doloribus tempore, magnam earum. Iure tempora, in omnis labore sunt aliquid doloremque iste vel fugit. Reprehenderit corrupti est rerum illo maxime?
-            Eum, aliquid excepturi numquam cum eos veniam id nisi suscipit, dolorum reiciendis tempore repudiandae illo? Modi officiis praesentium, ducimus veniam velit architecto explicabo sunt odio dolorem ad in ipsam sint.
-            Architecto quis, molestiae odio temporibus dicta nesciunt deserunt voluptates quod ipsam at esse reprehenderit inventore? Aperiam, maiores sequi neque architecto rem iure voluptatum molestiae consequuntur itaque vero labore tenetur ducimus?
-            Vero labore, facilis quis quos, dolore omnis pariatur cupiditate ducimus architecto sequi qui debitis itaque? Doloribus similique dolores praesentium. Maxime suscipit est, sint harum quas velit sed minus et nulla.
-            Possimus nulla iusto, deserunt voluptate laborum fugiat mollitia amet magnam aut nam expedita aliquam corrupti repudiandae beatae fugit totam nobis vitae? Ratione sequi doloribus, blanditiis doloremque eius voluptatibus quia quod?
-            Magni ducimus ullam reprehenderit laboriosam officia nam sequi. Sapiente, facilis odio tempore sequi ducimus iure at autem quam ad laborum veniam illum magni aliquam placeat, aspernatur commodi repellendus dolore laboriosam.
-            Maiores atque vitae maxime fugit quidem cumque ipsum sed ipsa doloremque ratione. Beatae recusandae quaerat quisquam sint cum ipsam vero sequi nemo! Magni amet explicabo quia sunt? Ratione, officia! Magni!
-            Perspiciatis, suscipit repellat. Dicta, nam molestiae. Laborum, ducimus. Voluptas omnis alias perspiciatis cumque quasi soluta sequi optio ducimus nihil necessitatibus, beatae eligendi expedita, sit incidunt tempora consequuntur, enim earum non.
-            Quidem velit voluptate sequi, doloribus nihil ratione corrupti natus, mollitia voluptatum eius maiores illo placeat? Porro, quasi doloremque natus tempore velit soluta cupiditate vero sit explicabo sint ullam libero ad!</p>
+          <p>ur fellowship, The Redeemed Christian Fellowship University of Ilesa, Transformation Chapel, stands as the happiest family on campus. We help students understand the reality of Christ. We teach truth with clarity. We create an environment where every student grows. We build a culture that honors God. We keep our focus on spiritual growth and unity. <br />
+
+Our Bible Study tagged Digging Deep gives students a better understanding of God’s word. We explain scripture with clarity. We answer questions that shape spiritual maturity. We help students apply the word in daily life. Our prayer meeting helps us seek the face of the Father. We grow stronger as we pray together. <br />
+
+Our mission of Aggressive Evangelism drives us beyond the campus. We reach people who need salvation. We speak to students, workers, traders, old people, and young people. We teach the message of Christ with clarity. We share testimony that leads hearts to truth. We trust God to touch lives through every outreach. <br />
+
+Our workforce stands united. Every department serves with purpose. Every worker supports the mission and vision of the fellowship. New students will feel God’s presence in a new dimension. They will find growth and direction. They will join a family that welcomes them with love.</p>
         </div>
 
         <div className="container about-section">
           <h2>Our Mission</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ipsa eos eum maiores, pariatur molestias ipsum eaque illum! Deleniti obcaecati ratione incidunt magni exercitationem accusantium. Error vel corporis animi reprehenderit!
-            Labore blanditiis aperiam architecto! Natus placeat porro dolorem quos aperiam possimus. Cupiditate beatae aliquid delectus culpa sed! Eos vel incidunt aliquid amet, natus id dignissimos maiores, quam ab inventore ipsam!
-            Sunt, eligendi amet iusto accusantium voluptas aspernatur reprehenderit itaque? Aut porro voluptatum voluptas sed perspiciatis, accusantium repellat quidem error, repudiandae expedita ab sit debitis corrupti nihil aliquid voluptate soluta similique.
-            Numquam commodi rem laboriosam quia quo voluptates iure magnam quos, mollitia, neque rerum officia nostrum illo aliquam. Eligendi, magnam excepturi veritatis exercitationem odio dolorem libero ut voluptatum minima distinctio tempora.
-            Earum dolorum necessitatibus facilis architecto dolores unde quas, obcaecati ut animi officia reiciendis dolore quo quidem? Velit laudantium natus aspernatur! Doloremque id ut, quas debitis iste quod non eius itaque.
-            Culpa inventore qui, corporis optio, a praesentium, id maxime numquam perferendis dolorem unde asperiores eaque est saepe velit fuga tenetur molestiae. Animi sapiente voluptas asperiores ipsum, eaque modi fugiat delectus!
-            Sequi quaerat nostrum tenetur deleniti maiores mollitia vel recusandae doloribus tempore, magnam earum. Iure tempora, in omnis labore sunt aliquid doloremque iste vel fugit. Reprehenderit corrupti est rerum illo maxime?
-            Eum, aliquid excepturi numquam cum eos veniam id nisi suscipit, dolorum reiciendis tempore repudiandae illo? Modi officiis praesentium, ducimus veniam velit architecto explicabo sunt odio dolorem ad in ipsam sint.
-            Architecto quis, molestiae odio temporibus dicta nesciunt deserunt voluptates quod ipsam at esse reprehenderit inventore? Aperiam, maiores sequi neque architecto rem iure voluptatum molestiae consequuntur itaque vero labore tenetur ducimus?
-            Vero labore, facilis quis quos, dolore omnis pariatur cupiditate ducimus architecto sequi qui debitis itaque? Doloribus similique dolores praesentium. Maxime suscipit est, sint harum quas velit sed minus et nulla.
-            Possimus nulla iusto, deserunt voluptate laborum fugiat mollitia amet magnam aut nam expedita aliquam corrupti repudiandae beatae fugit totam nobis vitae? Ratione sequi doloribus, blanditiis doloremque eius voluptatibus quia quod?
-            Magni ducimus ullam reprehenderit laboriosam officia nam sequi. Sapiente, facilis odio tempore sequi ducimus iure at autem quam ad laborum veniam illum magni aliquam placeat, aspernatur commodi repellendus dolore laboriosam.
-            Maiores atque vitae maxime fugit quidem cumque ipsum sed ipsa doloremque ratione. Beatae recusandae quaerat quisquam sint cum ipsam vero sequi nemo! Magni amet explicabo quia sunt? Ratione, officia! Magni!
-            Perspiciatis, suscipit repellat. Dicta, nam molestiae. Laborum, ducimus. Voluptas omnis alias perspiciatis cumque quasi soluta sequi optio ducimus nihil necessitatibus, beatae eligendi expedita, sit incidunt tempora consequuntur, enim earum non.
-            Quidem velit voluptate sequi, doloribus nihil ratione corrupti natus, mollitia voluptatum eius maiores illo placeat? Porro, quasi doloremque natus tempore velit soluta cupiditate vero sit explicabo sint ullam libero ad!</p>
+          <div>
+            <h4>Holiness</h4>
+            <p>Holiness stands at the center of our mission as RCF University of Ilesa chapter, Transformation Chapel. We choose a life that honors God in our conduct. We keep our thoughts clean and our actions sincere. We follow the teachings of Jesus in our decisions. We build strength through prayer and the Word. We show love in our relationships. We reject habits that oppose God's standards. We hold to scriptures like 1 Peter 1:16 and Psalm 24:3 to 4.</p>
+
+            <h4>Reaching To Unbelievers</h4>
+            <p>We reach unbelievers across nations with the message of Jesus Christ our Lord. We speak the gospel with clarity in every region. We equip members to present the truth with boldness. We support missions with prayer and resources. We form relationships that lead people to Christ. We organize outreach that draws hearts to the cross. We ask God to open doors for salvation everywhere. We hold to Mark 16:15 and Romans 10:14 as we pursue souls.</p>
+
+            <h4>Aggressive Evangelism</h4>
+            <p>We expand our mission by reaching students who need Christ. We invite them into a fellowship where they grow in truth. We stay present on campus with steady outreach. We place teams in hostels, lecture halls, and gathering points. We guide newcomers with clear teaching on salvation. We build a welcoming environment that encourages commitment. We strengthen our fellowship through unity and service. We stand on Matthew 28:19 and Acts 1:8 as we pursue aggressive evangelism.</p>
+          </div>
         </div>
 
         <div className="container about-section">
           <h2>Our Vision</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ipsa eos eum maiores, pariatur molestias ipsum eaque illum! Deleniti obcaecati ratione incidunt magni exercitationem accusantium. Error vel corporis animi reprehenderit!
-            Labore blanditiis aperiam architecto! Natus placeat porro dolorem quos aperiam possimus. Cupiditate beatae aliquid delectus culpa sed! Eos vel incidunt aliquid amet, natus id dignissimos maiores, quam ab inventore ipsam!
-            Sunt, eligendi amet iusto accusantium voluptas aspernatur reprehenderit itaque? Aut porro voluptatum voluptas sed perspiciatis, accusantium repellat quidem error, repudiandae expedita ab sit debitis corrupti nihil aliquid voluptate soluta similique.
-            Numquam commodi rem laboriosam quia quo voluptates iure magnam quos, mollitia, neque rerum officia nostrum illo aliquam. Eligendi, magnam excepturi veritatis exercitationem odio dolorem libero ut voluptatum minima distinctio tempora.
-            Earum dolorum necessitatibus facilis architecto dolores unde quas, obcaecati ut animi officia reiciendis dolore quo quidem? Velit laudantium natus aspernatur! Doloremque id ut, quas debitis iste quod non eius itaque.
-            Culpa inventore qui, corporis optio, a praesentium, id maxime numquam perferendis dolorem unde asperiores eaque est saepe velit fuga tenetur molestiae. Animi sapiente voluptas asperiores ipsum, eaque modi fugiat delectus!
-            Sequi quaerat nostrum tenetur deleniti maiores mollitia vel recusandae doloribus tempore, magnam earum. Iure tempora, in omnis labore sunt aliquid doloremque iste vel fugit. Reprehenderit corrupti est rerum illo maxime?
-            Eum, aliquid excepturi numquam cum eos veniam id nisi suscipit, dolorum reiciendis tempore repudiandae illo? Modi officiis praesentium, ducimus veniam velit architecto explicabo sunt odio dolorem ad in ipsam sint.
-            Architecto quis, molestiae odio temporibus dicta nesciunt deserunt voluptates quod ipsam at esse reprehenderit inventore? Aperiam, maiores sequi neque architecto rem iure voluptatum molestiae consequuntur itaque vero labore tenetur ducimus?
-            Vero labore, facilis quis quos, dolore omnis pariatur cupiditate ducimus architecto sequi qui debitis itaque? Doloribus similique dolores praesentium. Maxime suscipit est, sint harum quas velit sed minus et nulla.
-            Possimus nulla iusto, deserunt voluptate laborum fugiat mollitia amet magnam aut nam expedita aliquam corrupti repudiandae beatae fugit totam nobis vitae? Ratione sequi doloribus, blanditiis doloremque eius voluptatibus quia quod?
-            Magni ducimus ullam reprehenderit laboriosam officia nam sequi. Sapiente, facilis odio tempore sequi ducimus iure at autem quam ad laborum veniam illum magni aliquam placeat, aspernatur commodi repellendus dolore laboriosam.
-            Maiores atque vitae maxime fugit quidem cumque ipsum sed ipsa doloremque ratione. Beatae recusandae quaerat quisquam sint cum ipsam vero sequi nemo! Magni amet explicabo quia sunt? Ratione, officia! Magni!
-            Perspiciatis, suscipit repellat. Dicta, nam molestiae. Laborum, ducimus. Voluptas omnis alias perspiciatis cumque quasi soluta sequi optio ducimus nihil necessitatibus, beatae eligendi expedita, sit incidunt tempora consequuntur, enim earum non.
-            Quidem velit voluptate sequi, doloribus nihil ratione corrupti natus, mollitia voluptatum eius maiores illo placeat? Porro, quasi doloremque natus tempore velit soluta cupiditate vero sit explicabo sint ullam libero ad!</p>
-        </div>
+          <div>
+            <h4>To make heaven</h4>
+            <p>ur vision is to live a life that honors God daily. We pursue holiness in thoughts, words, and actions. We cultivate a deep relationship with Jesus through prayer and the Word. We commit to obedience and righteousness in every decision. We focus on eternal rewards, keeping heaven as our ultimate goal.</p>
 
-        <div className="container about-section">
-          <h2>Our Currrent Level</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ipsa eos eum maiores, pariatur molestias ipsum eaque illum! Deleniti obcaecati ratione incidunt magni exercitationem accusantium. Error vel corporis animi reprehenderit!
-            Labore blanditiis aperiam architecto! Natus placeat porro dolorem quos aperiam possimus. Cupiditate beatae aliquid delectus culpa sed! Eos vel incidunt aliquid amet, natus id dignissimos maiores, quam ab inventore ipsam!
-            Sunt, eligendi amet iusto accusantium voluptas aspernatur reprehenderit itaque? Aut porro voluptatum voluptas sed perspiciatis, accusantium repellat quidem error, repudiandae expedita ab sit debitis corrupti nihil aliquid voluptate soluta similique.
-            Numquam commodi rem laboriosam quia quo voluptates iure magnam quos, mollitia, neque rerum officia nostrum illo aliquam. Eligendi, magnam excepturi veritatis exercitationem odio dolorem libero ut voluptatum minima distinctio tempora.
-            Earum dolorum necessitatibus facilis architecto dolores unde quas, obcaecati ut animi officia reiciendis dolore quo quidem? Velit laudantium natus aspernatur! Doloremque id ut, quas debitis iste quod non eius itaque.
-            Culpa inventore qui, corporis optio, a praesentium, id maxime numquam perferendis dolorem unde asperiores eaque est saepe velit fuga tenetur molestiae. Animi sapiente voluptas asperiores ipsum, eaque modi fugiat delectus!
-            Sequi quaerat nostrum tenetur deleniti maiores mollitia vel recusandae doloribus tempore, magnam earum. Iure tempora, in omnis labore sunt aliquid doloremque iste vel fugit. Reprehenderit corrupti est rerum illo maxime?
-            Eum, aliquid excepturi numquam cum eos veniam id nisi suscipit, dolorum reiciendis tempore repudiandae illo? Modi officiis praesentium, ducimus veniam velit architecto explicabo sunt odio dolorem ad in ipsam sint.
-            Architecto quis, molestiae odio temporibus dicta nesciunt deserunt voluptates quod ipsam at esse reprehenderit inventore? Aperiam, maiores sequi neque architecto rem iure voluptatum molestiae consequuntur itaque vero labore tenetur ducimus?
-            Vero labore, facilis quis quos, dolore omnis pariatur cupiditate ducimus architecto sequi qui debitis itaque? Doloribus similique dolores praesentium. Maxime suscipit est, sint harum quas velit sed minus et nulla.
-            Possimus nulla iusto, deserunt voluptate laborum fugiat mollitia amet magnam aut nam expedita aliquam corrupti repudiandae beatae fugit totam nobis vitae? Ratione sequi doloribus, blanditiis doloremque eius voluptatibus quia quod?
-            Magni ducimus ullam reprehenderit laboriosam officia nam sequi. Sapiente, facilis odio tempore sequi ducimus iure at autem quam ad laborum veniam illum magni aliquam placeat, aspernatur commodi repellendus dolore laboriosam.
-            Maiores atque vitae maxime fugit quidem cumque ipsum sed ipsa doloremque ratione. Beatae recusandae quaerat quisquam sint cum ipsam vero sequi nemo! Magni amet explicabo quia sunt? Ratione, officia! Magni!
-            Perspiciatis, suscipit repellat. Dicta, nam molestiae. Laborum, ducimus. Voluptas omnis alias perspiciatis cumque quasi soluta sequi optio ducimus nihil necessitatibus, beatae eligendi expedita, sit incidunt tempora consequuntur, enim earum non.
-            Quidem velit voluptate sequi, doloribus nihil ratione corrupti natus, mollitia voluptatum eius maiores illo placeat? Porro, quasi doloremque natus tempore velit soluta cupiditate vero sit explicabo sint ullam libero ad!</p>
+            <h4>To take as many as possible with us</h4>
+            <p>We aim to reach unbelievers with the gospel of Christ. We engage others through teaching, fellowship, and outreach. We train members to share salvation boldly on campus and beyond. We build a welcoming environment that encourages commitment and growth. We trust God to use our efforts to lead many to eternal life.</p>
+          </div>
         </div>
 
         <div className="container  leaders-section1">
-          <h2 className='leaers-card-titile'>Our Currrent Leader</h2>
+          <h2 className='leaers-card-titile'>Our Leader</h2>
           <div className="leaders-grid">
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={president} alt="" />
               <div>
                 <h3>Janet Adeleke Adejoke</h3>
@@ -128,7 +101,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={vicePre} alt="" />
               <div>
                 <h3>OGUNGBEMI TAIWO</h3>
@@ -138,7 +111,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={Gen} alt="" />
               <div>
                 <h3>Olaoluwa Progress Lydia</h3>
@@ -148,7 +121,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={sister} alt="" />
               <div>
                 <h3>Ogunremi Funke</h3>
@@ -157,7 +130,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={prayerCod} alt="" />
               <div>
                 <h3>Alawode Peace Temidayo</h3>
@@ -167,7 +140,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={finSec} alt="" />
               <div>
                 <h3>Grace Oluwatoyin</h3>
@@ -176,7 +149,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={PRO} alt="" />
               <div>
                 <h3>OLUSOGO OKIKIJESU AYOMIDE</h3>
@@ -186,7 +159,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={AGS} alt="" />
               <div>
                 <h3>Fagbola Oyinlola Hannah</h3>
@@ -194,7 +167,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={sanitation} alt="" />
               <div>
                 <h3>Adekunle Omotola Gloria</h3>
@@ -203,7 +176,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={bibleStudy} alt="" />
               <div>
                 <h3>Olugbodi Grace Adufe</h3>
@@ -211,7 +184,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={MD} alt="" />
               <div>
                 <h3>Ajayi Elisha</h3>
@@ -219,7 +192,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={AMD} alt="" />
               <div>
                 <h3>Omolebi Teniola Daniella</h3>
@@ -227,7 +200,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={media} alt="" />
               <div>
                 <h3>Fola-Makinde Samuel</h3>
@@ -235,15 +208,15 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
-              <img src={HeroImg} alt="" />
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+              <img src={USH} alt="" />
               <div>
-                <h3>Name</h3>
+                <h3>Ojo Deborah Chukwunonso</h3>
                 <p>Ushering Coordinator</p>
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={Deco} alt="" />
               <div>
                 <h3>Oviguerien faith ayomide</h3>
@@ -252,7 +225,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={Protocol} alt="" />
               <div>
                 <h3>Ogunjobi Damilola Oluwatunmise</h3>
@@ -260,7 +233,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={follow1} alt="" />
               <div>
                 <h3>Ayodele Precious Pipeloluwa </h3>
@@ -268,7 +241,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={follow2} alt="" />
               <div>
                 <h3>Adebayo Moyinoluwa favour</h3>
@@ -277,7 +250,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={TC} alt="" />
               <div>
                 <h3>Yusuf Ayomide Modecai</h3>
@@ -286,7 +259,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={Academic} alt="" />
               <div>
                 <h3>Ishola Similoluwa Sarah</h3>
@@ -295,7 +268,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={WA} alt="" />
               <div>
                 <h3>Ogunrinde Iyanuoluwa Fiyinfoluwa</h3>
@@ -303,7 +276,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={AW} alt="" />
               <div>
                 <h3>Odelaanu Inioluwa Dorcas</h3>
@@ -311,7 +284,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={Drama} alt="" />
               <div>
                 <h3>Adeosun Praise Adeyoyin</h3>
@@ -319,7 +292,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="leader-card">
+            <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
               <img src={sport} alt="" />
               <div>
                 <h3>Olahanmi Wealth Olaoye</h3>

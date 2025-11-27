@@ -7,6 +7,7 @@ import carouselImg2 from '../assets/20251028_154814-removebg-preview.png'
 import carouselImg3 from '../assets/20250219_203324.png'
 import { Link } from 'react-router-dom'
 import ContactCard from '../components/ContactCard'
+// import DomeGallery from '../components/DomeGallery'
 
 export default function Home() {
   return (
@@ -39,33 +40,26 @@ export default function Home() {
         </div>
       </div>
 
+        {/* <div style={{ width: '100vw', height: '100vh' }}>
+          <DomeGallery />
+        </div> */}
+
       <div className='our-mission-section'>
         <div className='container'>
           <div>
             <h4>ABOUT US</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita cumque, dolorum quibusdam quam laboriosam nulla minus magni rerum exercitationem beatae quia, minima officiis qui officia dolorem explicabo facilis eius.
-              Cumque distinctio rerum aliquam expedita similique alias dolores sed ipsa numquam ipsum consectetur, placeat quasi, voluptatum quia aliquid provident quo laboriosam rem exercitationem autem illo quam. Mollitia, facere. Eos, incidunt.
-              Ratione maxime sit tenetur molestias impedit aspernatur alias explicabo libero. Officiis ipsa hic voluptas veritatis tenetur distinctio quam totam! Velit similique, ipsum exercitationem iusto eligendi reprehenderit suscipit recusandae dolore tenetur.
-              Explicabo mollitia, iusto minus quibusdam unde necessitatibus eveniet dolore suscipit sapiente quae labore fuga dolorum, consectetur reiciendis eligendi nisi expedita, porro cum! Ipsa sit facere eveniet culpa dolore et quaerat.
-              Reprehenderit quos placeat nisi, quam maiores sed a itaque illum ratione reiciendis! Aliquam praesentium inventore totam. Ea, dolorem. Corporis dolorum quaerat inventore commodi dolores fuga perferendis quasi, repellat rerum dicta!
-              Alias sunt neque voluptate molestiae! Tempore animi porro facere aspernatur voluptatibus sint distinctio ipsum a! Maxime, id odit! Laborum ab ea veritatis reprehenderit consectetur iure error sed numquam unde commodi!
-              Perspiciatis molestias est assumenda dignissimos obcaecati eligendi, suscipit fugiat harum quia mollitia sed eos! Error consectetur debitis voluptatibus pariatur dignissimos quaerat aspernatur veritatis reprehenderit repellendus maxime. Eaque, delectus architecto. Architecto.
-              Quae, necessitatibus accusamus doloribus optio, fuga expedita libero officiis, dolores at maiores reprehenderit consectetur animi debitis. Reprehenderit optio corrupti doloribus deleniti labore quia sapiente eum error minima! Architecto, rem velit.
-              Illo tempora ratione temporibus aut! Totam hic tempore, obcaecati animi, quo, molestias omnis provident et quibusdam molestiae beatae! In totam sapiente at tempora neque eligendi eos error autem quae nostrum.
-              Iusto alias culpa ea consectetur repellat distinctio quidem molestias delectus aliquid, expedita ab labore tempora officiis commodi vero asperiores! Molestias at, id illum aut repellat vel harum expedita! Magni, est! <Link to={'/aboutus'} >Read More</Link> </p>
+            <p>Our fellowship, The Redeemed Christian Fellowship University of Ilesa, Transformation Chapel, stands as the happiest family on campus. We help students understand the reality of Christ. We teach truth with clarity. We create an environment where every student grows. We build a culture that honors God. We keep our focus on spiritual growth and unity. <br /> <br />
+
+Our Bible Study tagged Digging Deep gives students a better understanding of God’s word. We explain scripture with clarity. We answer questions that shape spiritual maturity. We help students apply the word in daily life. Our prayer meeting helps us seek the face of the Father. We grow stronger as we pray together. <br /> <br />
+
+Our mission of Aggressive Evangelism drives us beyond the campus. We reach people who need salvation. We speak to students, workers, traders, old people, and young people. We teach the message of Christ with clarity. We share testimony that leads hearts to truth. We trust God to touch lives through every outreach. <br /> <br />
+
+Our workforce stands united. Every department serves with purpose. Every worker supports the mission and vision of the fellowship. New students will feel God’s presence in a new dimension. They will find growth and direction. They will join a family that welcomes them with love. <Link to={'/aboutus'} >Read More</Link> </p>
           </div>
           <div>
             <h4>OUR MISSION</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita cumque, dolorum quibusdam quam laboriosam nulla minus magni rerum exercitationem beatae quia, minima officiis qui officia dolorem explicabo facilis eius.
-              Cumque distinctio rerum aliquam expedita similique alias dolores sed ipsa numquam ipsum consectetur, placeat quasi, voluptatum quia aliquid provident quo laboriosam rem exercitationem autem illo quam. Mollitia, facere. Eos, incidunt.
-              Ratione maxime sit tenetur molestias impedit aspernatur alias explicabo libero. Officiis ipsa hic voluptas veritatis tenetur distinctio quam totam! Velit similique, ipsum exercitationem iusto eligendi reprehenderit suscipit recusandae dolore tenetur.
-              Explicabo mollitia, iusto minus quibusdam unde necessitatibus eveniet dolore suscipit sapiente quae labore fuga dolorum, consectetur reiciendis eligendi nisi expedita, porro cum! Ipsa sit facere eveniet culpa dolore et quaerat.
-              Reprehenderit quos placeat nisi, quam maiores sed a itaque illum ratione reiciendis! Aliquam praesentium inventore totam. Ea, dolorem. Corporis dolorum quaerat inventore commodi dolores fuga perferendis quasi, repellat rerum dicta!
-              Alias sunt neque voluptate molestiae! Tempore animi porro facere aspernatur voluptatibus sint distinctio ipsum a! Maxime, id odit! Laborum ab ea veritatis reprehenderit consectetur iure error sed numquam unde commodi!
-              Perspiciatis molestias est assumenda dignissimos obcaecati eligendi, suscipit fugiat harum quia mollitia sed eos! Error consectetur debitis voluptatibus pariatur dignissimos quaerat aspernatur veritatis reprehenderit repellendus maxime. Eaque, delectus architecto. Architecto.
-              Quae, necessitatibus accusamus doloribus optio, fuga expedita libero officiis, dolores at maiores reprehenderit consectetur animi debitis. Reprehenderit optio corrupti doloribus deleniti labore quia sapiente eum error minima! Architecto, rem velit.
-              Illo tempora ratione temporibus aut! Totam hic tempore, obcaecati animi, quo, molestias omnis provident et quibusdam molestiae beatae! In totam sapiente at tempora neque eligendi eos error autem quae nostrum.
-              Iusto alias culpa ea consectetur repellat distinctio quidem molestias delectus aliquid, expedita ab labore tempora officiis commodi vero asperiores! Molestias at, id illum aut repellat vel harum expedita! Magni, est! <Link to={'/aboutus'} >Read More</Link> </p>
+            <p>Our mission as RCF University of Ilesa chapter, Transformation Chapel centers on holy living, bold outreach, and aggressive evangelism. We choose a lifestyle that honors God in our thoughts and actions. We build strength through prayer and the Word. We reach unbelievers with clear teaching on salvation. We speak the gospel with confidence in every place God opens. We form connections that point people to Christ. We stay active on campus through steady outreach. We place teams in hostels and lecture halls to reach students. We welcome newcomers into a fellowship where they grow in truth. We strengthen our unity as we work together. We hold to scriptures like 1 Peter 1:16, Mark 16:15, and Matthew 28:19.
+ <Link to={'/aboutus'} >Read More</Link> </p>
           </div>
         </div>
       </div>
@@ -73,9 +67,7 @@ export default function Home() {
       <div className="works">
         <div className="container work-cont">
           <h4>Work Force</h4>
-          <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos atque hic, in eaque ducimus assumenda neque architecto sequi, delectus sapiente iste voluptatibus deleniti debitis, repellendus alias ipsum? Sit, facilis.
-            Incidunt harum distinctio consectetur tempore blanditiis aliquam nostrum in saepe veritatis commodi. Ad ut repudiandae consequatur fuga eaque excepturi quia, tempore, rerum enim quos quo ipsum beatae eveniet. Accusamus, obcaecati.
-            Unde quod laudantium hic mollitia id voluptatem, at amet dolorum magni incidunt aspernatur, asperiores, ex placeat quo dolor quasi et nulla nemo voluptatibus porro! Fuga doloremque enim repudiandae consequuntur consectetur.</h6>
+          <h6>RCF University of Ilesa chapter, Transformation Chapel grows through an active workforce that serves with purpose. You see students leading prayer, worship, outreach, and follow up. You see teams handling media, teaching, drama, welfare, ushering, and sanitation. You see commitment that builds a strong fellowship. You see unity that strengthens every program. You see leaders who guide members with clear direction. You see workers who support newcomers with patience and care. You see a structure that helps you grow in faith and service. You see opportunities to use your gifts. You see a place where your walk with Christ becomes stronger. You see a family waiting for you to join and serve.</h6>
           <div>
             <h5>Media Unit</h5>
             <h5>Decoration Unit</h5>
@@ -92,7 +84,7 @@ export default function Home() {
             <h5>Sanitation Unit</h5>
             <h5>Ushering Unit</h5>
           </div>
-          {/* <Link to={'/join.work.force'}> <button disabled>Join Work Force</button> </Link> */}
+          <Link to={'/join.work.force'}> <button>Join Work Force</button> </Link>
         </div>
       </div>
 

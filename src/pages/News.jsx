@@ -40,7 +40,7 @@ export default function News() {
                 </div>
             </div>
 
-            <div className='news1'>
+            {/* <div className='news1'>
                 <div className='news-img-cont'>
                   <img src={img} alt="" />
                 </div>
@@ -52,9 +52,9 @@ export default function News() {
                   <div>
                     <h5>Gen. Secretary</h5>
                     {/* <button>Read More</button> */}
-                  </div>
+                  {/* </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className='news1'>
                 <div className='news-img-cont'>
