@@ -1,0 +1,196 @@
+:root {
+  --sidenav-width-expanded: 240px;
+  --sidenav-width-collapsed: 90px;
+  --sidenav-width-mobile: 0px;
+  --topnav-height: 64px;
+  --transition-fast: 200ms;
+  --transition-smooth: 300ms;
+  --bg: #ffffff;
+  --muted: #f5f7fb;
+  --shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* layout shell */
+.layout {
+  display: block;
+  min-height: 100vh;
+  background: var(--muted);
+  color: #111;
+}
+
+/* sidenav base */
+.dash-sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: var(--sidenav-width-expanded);
+  background: #0f1724;
+  color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: var(--shadow);
+  transition: width var(--transition-smooth) ease, transform var(--transition-smooth) ease;
+  z-index: 40;
+  will-change: width, transform;
+}
+
+/* collapsed state */
+.dash-sidenav.collapsed {
+  width: var(--sidenav-width-collapsed);
+}
+
+/* mobile hidden state (off-canvas) */
+.dash-sidenav.mobile-hidden {
+  transform: translateX(-110%);
+  width: var(--sidenav-width-expanded);
+}
+
+/* optional inner container to keep items aligned */
+.dash-sidenav .sidenav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px 12px;
+}
+
+/* brand area */
+.dash-sidenav .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  height: 64px;
+  flex: 0 0 auto;
+}
+
+/* nav items */
+.dash-sidenav .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dash-sidenav .nav-item .label {
+  transition: opacity var(--transition-fast) ease, transform var(--transition-fast) ease;
+}
+.dash-sidenav.collapsed .nav-item .label {
+  opacity: 0;
+  transform: translateX(-6px);
+  pointer-events: none;
+}
+
+/* main content area */
+.main-content {
+  margin-left: var(--sidenav-width-expanded);
+  transition: margin-left var(--transition-smooth) ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: transparent;
+}
+
+/* when collapsed */
+.main-content.collapsed {
+  margin-left: var(--sidenav-width-collapsed);
+}
+
+/* top nav sticky */
+.dash-topnav {
+  position: sticky;
+  top: 0;
+  height: var(--topnav-height);
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  z-index: 30;
+  flex: 0 0 var(--topnav-height);
+}
+
+/* content container under topnav */
+.admin-content {
+  padding: 20px;
+  overflow: auto;
+  min-height: calc(100vh - var(--topnav-height));
+}
+
+/* small utilities */
+.hidden-mobile {
+  display: block;
+}
+.show-mobile {
+  display: none;
+}
+
+/* overlay for mobile open */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast) ease;
+}
+.mobile-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* responsive rules */
+@media (max-width: 1024px) {
+  :root {
+    --sidenav-width-expanded: 220px;
+    --sidenav-width-collapsed: 72px;
+    --topnav-height: 56px;
+  }
+
+  .dash-sidenav {
+    transform: translateX(-110%);
+  }
+
+  .dash-sidenav.mobile-open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .main-content.shifted {
+    /* when overlay open and you want main content to dim or shift */
+    filter: blur(0.6px);
+    pointer-events: none;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: inline-flex;
+  }
+}
+
+/* prevent double-scroll on content */
+html, body, #root {
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+/* content scroll only inside admin-content */
+.admin-content {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Accessibility focus outlines */
+.dash-sidenav .nav-item:focus {
+  outline: 2px solid rgba(255,255,255,0.14);
+  outline-offset: 2px;
+}

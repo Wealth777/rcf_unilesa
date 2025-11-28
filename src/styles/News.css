@@ -85,7 +85,7 @@ button {
   float: right;
 }
 
-button::after {
+/* button::after {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -106,7 +106,7 @@ button:hover {
   background: #222;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   color: white;
-}
+} */
 
 @media (max-width: 992px) {
   .news1 {

@@ -1,0 +1,81 @@
+.dashboard-page {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-btn {
+  padding: 10px 16px;
+  background: #2f67ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.stats-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+  font-size: 15px;
+  color: #555;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+}
+
+.dashboard-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-section h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+.recent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.recent-item {
+  background: #e9e9e9;
+  height: 110px;
+  border-radius: 10px;
+}
+
+.activity-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  color: #666;
+}

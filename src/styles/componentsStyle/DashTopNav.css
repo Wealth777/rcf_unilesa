@@ -1,0 +1,91 @@
+.dash-topnav {
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.sidebartoggle{
+    background: none;
+    width: 20px;
+    height: 40px;
+    font-size: 0.6rem;
+    justify-content: center;
+}
+
+.sidebar-icon{
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+
+.dash-topnav .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.dash-topnav .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dash-topnav .right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+.top-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.top-icon:hover {
+    background: #6863637c;
+    border-radius: 50%;
+}
+
+.profile {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .dash-topnav .title {
+        font-size: 12px;
+        margin-top: 12px;
+    }   
+}
+
+@media (max-width: 400px) {
+    .dash-topnav .title {
+        font-size: 10px;
+        margin-top: 12px;
+    }   
+
+    .dash-topnav .left {
+        margin-left: -20px;
+    }
+
+    .dash-topnav .right {
+        gap: 10px;
+        margin-right: -5px;
+    }
+
+    .top-icon{
+        font-size: 15px;
+    }
+}
