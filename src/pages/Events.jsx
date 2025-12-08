@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/Event.css'
 import img from '../assets/DSC_0002a (23).JPG'
+import broAndSis from '../assets/WhatsApp Image 2025-12-08 at 11.11.38_d32badff.jpg'
+import carol from '../assets/carol.jpg'
 
 export default function Events() {
   return (
@@ -60,24 +62,24 @@ export default function Events() {
               {/* <button>Read More</button> */}
             </div>
           </div>
-
+          
           <div className='events1'>
             <div className='events-img-cont'>
               <img src={img} alt="" />
             </div>
 
             <div>
-              <h3>Christmas Carol</h3>
-              <p>Christmas Carol is a joyful celebration of the birth of Jesus Christ through songs, worship, and praise. It brings the church together in gratitude and reflection on God’s love. It’s a night of music, joy, and the true spirit of Christmas.</p>
+              <h3>Sunday Service</h3>
+              <p></p>
 
               <div className='Date-cont'>
                 <div>
                   <h6>Date</h6>
-                  <p>Thursday</p>
+                  <p>Sunday</p>
                 </div>
                 <div>
                   <h6>Time</h6>
-                  <p>5pm - 6pm</p>
+                  <p>8am - 11am</p>
                 </div>
                 <div>
                   <h6>Location</h6>
@@ -90,21 +92,61 @@ export default function Events() {
 
           <div className='events1'>
             <div className='events-img-cont'>
-              <img src={img} alt="" />
+              <img src={carol} alt="" />
             </div>
 
             <div>
-              <h3>Brothers and Sisters Week</h3>
-              <p>Brothers and Sisters Week is a special time for fellowship, unity, and spiritual growth among members. It strengthens relationships, encourages mutual support, and promotes love within the family of faith. It’s a week to connect, serve, and celebrate together as one body in Christ.</p>
+              <h3> A CHRISTMAS CAROL – MESSIAH: THE GIFT </h3>
+              <p>Christmas Carol is a joyful celebration of the birth of Jesus Christ through songs, worship, and praise. It brings the church together in gratitude and reflection on God’s love. It’s a night of music, joy, and the true spirit of Christmas.</p>
+              <p>This December, we gather to celebrate the birth of the greatest gift to humanity — Jesus, the Messiah.  
+</p>
+<p>Let's gather to honor the birth of the one who changed everything. Come experience the joy, warmth, and wonder of Christmas through powerful carol and heartfelt worship
+</p><p>It’s not just about the season — it’s about the Savior.
+</p><p>Invite someone. Come expectant. The Gift is waiting for you.  
+</p>
 
               <div className='Date-cont'>
                 <div>
                   <h6>Date</h6>
-                  <p>Thursday</p>
+                  <p>Friday, 12th December 2025</p>
                 </div>
                 <div>
                   <h6>Time</h6>
-                  <p>5pm - 6pm</p>
+                  <p>5:00 PM  </p>
+                </div>
+                <div>
+                  <h6>Location</h6>
+                  <p>RCF AUDITORIUM</p>
+                </div>
+              </div>
+              {/* <button>Read More</button> */}
+            </div>
+          </div>
+
+          <div className='events1'>
+            <div className='events-img-cont'>
+              <img src={broAndSis} alt="" />
+            </div>
+
+            <div>
+              <h3>BRO SIS WEEK IS HERE!</h3>
+              <h3>THEME: THE BOANERGES</h3>
+              <p>Brothers and Sisters Week is a special time for fellowship, unity, and spiritual growth among members. It strengthens relationships, encourages mutual support, and promotes love within the family of faith. It’s a week to connect, serve, and celebrate together as one body in Christ.</p>
+              <p>
+                Get ready for a week of love, laughter, bonding, and Kingdom vibes! 💃🕺  
+It’s not just an event — it’s a FAMILY EXPERIENCE! ❤  
+              </p>
+
+              <p>Come, connect, and create unforgettable memories with your brothers and sisters in Christ! Don’t miss it!</p>
+
+              <div className='Date-cont'>
+                <div>
+                  <h6>Date</h6>
+                  <p>Date: 12th – 18th January, 2026</p>
+                </div>
+                <div>
+                  <h6>Time</h6>
+                  <p></p>
                 </div>
                 <div>
                   <h6>Location</h6>

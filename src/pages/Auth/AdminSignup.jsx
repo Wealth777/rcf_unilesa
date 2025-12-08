@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { FaEnvelope, FaEye, FaEyeSlash, FaLock, FaUser } from 'react-icons/fa';
 import { useFormik } from 'formik'
 import * as yup from 'yup'
+import axios from 'axios';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function AdminSignup() {
 
@@ -26,7 +28,21 @@ export default function AdminSignup() {
             password: '',
             confirmPassword: ''
         },
-        onSubmit: () =>{},
+        onSubmit: async (values, { resetForm }) => {
+
+            try {
+                const res = await axios.post('http://localhost:9000/api/admin/reg', values);
+
+                // console.log(res.data)
+                toast.success(`${res.data.message}. Check your email to verify your account.`)
+
+                resetForm();
+            } catch (err) {
+                // console.log(err)
+                toast.error(`Error creating account: ${err.response?.data?.message || err.message}`);
+            }
+
+        },
         validationSchema: yup.object({
             firstName: yup.string().required('First Name is required'),
             middleName: yup.string().required('Middle Name is required'),
@@ -39,92 +55,105 @@ export default function AdminSignup() {
 
     return (
         <div className="auth-page">
+            <Toaster position="top-center" toastOptions={{ duration: 4000 }} />
             <div className="auth-container" data-aos="fade-down">
                 <img src={logo} alt="logo" className="auth-logo" />
                 <h2 className="auth-title">Admin Signup</h2>
 
-                <form className="auth-form">
+                <form className="auth-form" onSubmit={formik.handleSubmit}>
                     <div>
-                        <FaUser className='input-icon' />
-                        <input type="text"
-                             name='firstName' 
-                             placeholder="First Name" 
-                             className="auth-input" 
-                             onBlur={formik.handleBlur} 
-                             onChange={formik.handleChange} 
-                        />
-                        <p>{formik.touched.firstName && formik.errors.firstName ? <small>{formik.errors.firstName}</small> : ''} </p>
+                        <div>
+                            <FaUser className='input-icon' />
+                            <input type="text"
+                                name='firstName'
+                                placeholder="First Name"
+                                className="auth-input"
+                                onBlur={formik.handleBlur}
+                                onChange={formik.handleChange}
+                            />
+                        </div>
+                        <p className="auth-err">{formik.touched.firstName && formik.errors.firstName ? <small>{formik.errors.firstName}</small> : ''} </p>
                     </div>
                     <div>
-                        <FaUser className='input-icon' />
-                        <input 
-                            type="text" 
-                            name='middleName' 
-                            placeholder="Middle Name" 
-                            className="auth-input" 
-                            onBlur={formik.handleBlur} 
-                            onChange={formik.handleChange} 
-                        />
-                        <p>{formik.touched.middleName && formik.errors.middleName ? <small>{formik.errors.middleName}</small> : ''} </p>
+                        <div>
+                            <FaUser className='input-icon' />
+                            <input
+                                type="text"
+                                name='middleName'
+                                placeholder="Middle Name"
+                                className="auth-input"
+                                onBlur={formik.handleBlur}
+                                onChange={formik.handleChange}
+                            />
+                        </div>
+                        <p className="auth-err">{formik.touched.middleName && formik.errors.middleName ? <small>{formik.errors.middleName}</small> : ''} </p>
                     </div>
                     <div>
-                        <FaUser className='input-icon' />
-                        <input 
-                            type="text" 
-                            name='lastName' 
-                            placeholder="Last Name" 
-                            className="auth-input" 
-                            onBlur={formik.handleBlur} 
-                            onChange={formik.handleChange} 
-                        />
-                        <p>{formik.touched.lastName && formik.errors.lastName ? <small>{formik.errors.lastName}</small> : ''} </p>
+                        <div>
+                            <FaUser className='input-icon' />
+                            <input
+                                type="text"
+                                name='lastName'
+                                placeholder="Last Name"
+                                className="auth-input"
+                                onBlur={formik.handleBlur}
+                                onChange={formik.handleChange}
+                            />
+                        </div>
+                        <p className="auth-err">{formik.touched.lastName && formik.errors.lastName ? <small>{formik.errors.lastName}</small> : ''} </p>
                     </div>
                     <div>
-                        <FaEnvelope className='input-icon' />
-                        <input 
-                            type="email"  
-                            name='email'
-                            placeholder="Email" 
-                            className="auth-input" 
-                            onBlur={formik.handleBlur} 
-                            onChange={formik.handleChange} 
-                        />
-                        <p>{formik.touched.email && formik.errors.email ? <small>{formik.errors.email}</small> : ''} </p>
+                        <div>
+                            <FaEnvelope className='input-icon' />
+                            <input
+                                type="email"
+                                name='email'
+                                placeholder="Email"
+                                className="auth-input"
+                                onBlur={formik.handleBlur}
+                                onChange={formik.handleChange}
+                            />
+                        </div>
+                        <p className="auth-err">{formik.touched.email && formik.errors.email ? <small>{formik.errors.email}</small> : ''} </p>
                     </div>
                     <div>
-                        <FaLock className='input-icon' />
-                        <input 
-                            type={showPassword ? 'text' : 'password'} 
-                            name='password'
-                            placeholder="Password" 
-                            className="auth-input" 
-                            onBlur={formik.handleBlur} 
-                            onChange={formik.handleChange} 
-                        />
-                        <span className='input-icon' onClick={() => setShowPassword(!showPassword)}>
-                            {showPassword ? <FaEyeSlash/> : <FaEye/>}
-                        </span>
-                        <p>{formik.touched.password && formik.errors.password ? <small>{formik.errors.password}</small> : ''} </p>
+                        <div>
+                            <FaLock className='input-icon' />
+                            <input
+                                type={showPassword ? 'text' : 'password'}
+                                name='password'
+                                placeholder="Password"
+                                className="auth-input"
+                                onBlur={formik.handleBlur}
+                                onChange={formik.handleChange}
+                            />
+                            <span className='input-icon' onClick={() => setShowPassword(!showPassword)}>
+                                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                            </span>
+                        </div>
+                        <p className="auth-err">{formik.touched.password && formik.errors.password ? <small>{formik.errors.password}</small> : ''} </p>
                     </div>
                     <div>
-                        <FaLock className='input-icon' />
-                        <input 
-                            type={showConfirmPassword ? 'text' : "password"} 
-                            name='confirmPassword'
-                            placeholder="Confirm Password" 
-                            className="auth-input" 
-                            onBlur={formik.handleBlur} 
-                            onChange={formik.handleChange} 
-                        />
-                        <span className='input-icon' onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
-                            {showConfirmPassword ? <FaEyeSlash/> : <FaEye/>}
-                        </span>
-                        <p>{formik.touched.confirmPassword && formik.errors.confirmPassword ? <small>{formik.errors.confirmPassword}</small> : ''} </p>
+                        <div>
+                            <FaLock className='input-icon' />
+                            <input
+                                type={showConfirmPassword ? 'text' : "password"}
+                                name='confirmPassword'
+                                placeholder="Confirm Password"
+                                className="auth-input"
+                                onBlur={formik.handleBlur}
+                                onChange={formik.handleChange}
+                            />
+                            <span className='input-icon' onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
+                                {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+                            </span>
+                        </div>
+                        <p className="auth-err">{formik.touched.confirmPassword && formik.errors.confirmPassword ? <small>{formik.errors.confirmPassword}</small> : ''} </p>
                     </div>
 
-                    <button className="auth-button" type='button' onClick={formik.handleSubmit}>Create Account</button>
+                    <button className="auth-button" type='submit'>Create Account</button>
 
-                    <p>Already has an account? <Link to={'/admin/signin'}>Login</Link></p>
+                    <p>Already has an account? <Link className='links' to={'/admin/signin'}>Login</Link></p>
                 </form>
             </div>
         </div>

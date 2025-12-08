@@ -50,7 +50,7 @@ export default function DashSideNav({ isExpanded, setIsExpanded, mobileOpen, set
                         </li>
                     </Link>
 
-                    <Link className='side-links'>
+                    <Link to={'/admin/applications'} className='side-links'>
                         <li onClick={closeMobile}>
                             <FiInbox className="icon" />
                             {isExpanded && <span>Applications</span>}

@@ -47,6 +47,7 @@
   border-radius: 16px;
   padding: 3rem !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
 }
 
 .about-section h2 {
@@ -72,8 +73,9 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 3rem !important;
+  padding: 3rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 1200px !important;
 }
 
 .leaers-card-titile {
@@ -84,14 +86,13 @@
 }
 
 .leaders-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 
 .leader-card {
-  width: 300px;
+  width: 350px;
   height: auto;
   border-radius: 20px;
   background: rgba(0, 0, 128, 0.226) !important;
@@ -100,7 +101,7 @@
   transition: transform 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  text-align: center !important;
   padding: 1rem;
 }
 
@@ -122,16 +123,19 @@
   color: navy;
   font-weight: 600;
 }
+
 .leader-card div p {
   font-size: 18px;
   margin-top: 10px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
 }
+
 .leader-card div .p2 {
   margin-top: -15px !important;
   font-size: 15px;
   margin-top: 10px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .leader-info {
@@ -146,17 +150,52 @@
 
 
 
+@media (max-width: 1300px) {
+  .about-page {
+    padding: 30px;
+  }
+
+  .leader-card {
+    width: 100%;
+  }
+
+  .leader-card img {
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
   }
 
-  .leader-card {
-    width: 45%;
+  .leaders-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+
+
+  .leader-card {
+    width: 100%;
+  }
+
+  .leader-card img {
+    height: 200px;
+  }
+
+ 
+
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+
+  .leaders-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
   .leader-card {
     width: 100%;
   }

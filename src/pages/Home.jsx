@@ -2,47 +2,48 @@ import React from 'react'
 import '../styles/Home.css'
 import EventsCard from '../components/EventsCard'
 import QuoteCard from '../components/QuoteCard'
-import carouselImg1 from '../assets/20250219_203324.png'
-import carouselImg2 from '../assets/20251028_154814-removebg-preview.png'
+import carouselImg2 from '../assets/DSC_0002a (23).JPG'
 import carouselImg3 from '../assets/20250219_203324.png'
+import carouselImg4 from '../assets/WhatsApp Image 2025-11-16 at 12.08.52_839c56bf.jpg'
+import carouselImg5 from '../assets/WhatsApp Image 2025-05-04 at 12.26.44_fa532e08.jpg'
+import carouselImg6 from '../assets/WhatsApp Image 2025-05-18 at 11.48.35_06f7f944.jpg'
 import { Link } from 'react-router-dom'
 import ContactCard from '../components/ContactCard'
-// import DomeGallery from '../components/DomeGallery'
+import Carousel from 'react-bootstrap/Carousel';
+import NewsCards from '../components/NewsCards'
+
 
 export default function Home() {
   return (
     <>
-      <div
-        id="carouselExample"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={carouselImg1} className="d-block w-100" alt="Slide 1" />
-          </div>
-          <div className="carousel-item">
-            <img src={carouselImg2} className="d-block w-100" alt="Slide 2" />
-          </div>
-          <div className="carousel-item">
-            <img src={carouselImg3} className="d-block w-100" alt="Slide 3" />
-          </div>
-          <div className="carousel-item">
-            <img src={carouselImg3} className="d-block w-100" alt="Slide 3" />
-          </div>
-          <div className="carousel-caption">
-            <h1>Welcome to</h1>
-            <h5>THE REDEEMED CHRISTAIN FELLOWSHIP</h5>
-            <p>University of Ilesa Chapter</p>
-            <h3>TRANSFORMATION CHAPEL</h3>
-          </div>
-        </div>
-      </div>
+      <div>
+        <Carousel controls={false} indicators={false} interval={2000}>
+          <Carousel.Item>
+            <img src={carouselImg4} text="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={carouselImg2} text="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={carouselImg5} text="Third slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={carouselImg6} text="Fourth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={carouselImg2} text="Firth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={carouselImg3} text="Sixth slide" />
+          </Carousel.Item>
+        </Carousel>
 
-        {/* <div style={{ width: '100vw', height: '100vh' }}>
-          <DomeGallery />
-        </div> */}
+        <Carousel.Caption>
+          <h5>THE REDEEMED CHRISTAIN FELLOWSHIP</h5>
+          <p>University of Ilesa Chapter</p>
+          <h3>TRANSFORMATION CHAPEL</h3>
+        </Carousel.Caption>
+      </div>
 
       <div className='our-mission-section'>
         <div className='container'>
@@ -50,16 +51,16 @@ export default function Home() {
             <h4>ABOUT US</h4>
             <p>Our fellowship, The Redeemed Christian Fellowship University of Ilesa, Transformation Chapel, stands as the happiest family on campus. We help students understand the reality of Christ. We teach truth with clarity. We create an environment where every student grows. We build a culture that honors God. We keep our focus on spiritual growth and unity. <br /> <br />
 
-Our Bible Study tagged Digging Deep gives students a better understanding of God’s word. We explain scripture with clarity. We answer questions that shape spiritual maturity. We help students apply the word in daily life. Our prayer meeting helps us seek the face of the Father. We grow stronger as we pray together. <br /> <br />
+              Our Bible Study tagged Digging Deep gives students a better understanding of God’s word. We explain scripture with clarity. We answer questions that shape spiritual maturity. We help students apply the word in daily life. Our prayer meeting helps us seek the face of the Father. We grow stronger as we pray together. <br /> <br />
 
-Our mission of Aggressive Evangelism drives us beyond the campus. We reach people who need salvation. We speak to students, workers, traders, old people, and young people. We teach the message of Christ with clarity. We share testimony that leads hearts to truth. We trust God to touch lives through every outreach. <br /> <br />
+              Our mission of Aggressive Evangelism drives us beyond the campus. We reach people who need salvation. We speak to students, workers, traders, old people, and young people. We teach the message of Christ with clarity. We share testimony that leads hearts to truth. We trust God to touch lives through every outreach. <br /> <br />
 
-Our workforce stands united. Every department serves with purpose. Every worker supports the mission and vision of the fellowship. New students will feel God’s presence in a new dimension. They will find growth and direction. They will join a family that welcomes them with love. <Link to={'/aboutus'} >Read More</Link> </p>
+              Our workforce stands united. Every department serves with purpose. Every worker supports the mission and vision of the fellowship. New students will feel God’s presence in a new dimension. They will find growth and direction. They will join a family that welcomes them with love. <Link to={'/aboutus'} >Read More</Link> </p>
           </div>
           <div>
             <h4>OUR MISSION</h4>
-            <p>Our mission as RCF University of Ilesa chapter, Transformation Chapel centers on holy living, bold outreach, and aggressive evangelism. We choose a lifestyle that honors God in our thoughts and actions. We build strength through prayer and the Word. We reach unbelievers with clear teaching on salvation. We speak the gospel with confidence in every place God opens. We form connections that point people to Christ. We stay active on campus through steady outreach. We place teams in hostels and lecture halls to reach students. We welcome newcomers into a fellowship where they grow in truth. We strengthen our unity as we work together. We hold to scriptures like 1 Peter 1:16, Mark 16:15, and Matthew 28:19.
- <Link to={'/aboutus'} >Read More</Link> </p>
+            <p>Our mission as RCF University of Ilesa chapter, Transformation Chapel centers on holy living, bold outreach, and aggressive evangelism. We choose a lifestyle that honors God in our thoughts and actions. We build strength through prayer and the Word. We reach unbelievers with clear teaching on salvation. We speak the gospel with confidence in every place God opens. <br /><br /> We form connections that point people to Christ. We stay active on campus through steady outreach. We place teams in hostels and lecture halls to reach students. We welcome newcomers into a fellowship where they grow in truth. We strengthen our unity as we work together. We hold to scriptures like 1 Peter 1:16, Mark 16:15, and Matthew 28:19.
+              <Link to={'/aboutus'} >Read More</Link> </p>
           </div>
         </div>
       </div>
@@ -179,7 +180,8 @@ Our workforce stands united. Every department serves with purpose. Every worker 
 
       <EventsCard />
       <QuoteCard />
-      <ContactCard/>
+      <NewsCards />
+      <ContactCard />
     </>
   )
 }

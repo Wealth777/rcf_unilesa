@@ -42,7 +42,8 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: #FFD700;
-  text-shadow: none;
+  text-shadow: 0 4px 15px #22c55e;
+
 }
 
 .carousel-caption p {

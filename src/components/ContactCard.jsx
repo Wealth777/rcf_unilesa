@@ -105,7 +105,7 @@ export default function ContactCard() {
             className="handlesLinks-card"  
             data-aos="zoom-in"
             data-aos-easing="linear"
-            data-aos-duration="1000"
+            data-aos-duration="2000"
           >
             <div className="handlesLinks-content">
               <h3>{item.title}</h3>

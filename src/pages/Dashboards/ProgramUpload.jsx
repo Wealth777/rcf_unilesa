@@ -73,7 +73,7 @@ export default function ProgramUpload() {
                 </label>
 
                 <label>
-                    <span>Program Body</span>
+                    <span>Body</span>
                     <textarea
                         name="programBody"
                         rows="6"

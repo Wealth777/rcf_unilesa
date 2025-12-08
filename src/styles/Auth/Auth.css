@@ -45,6 +45,9 @@ body {
 
 .auth-form div{
     background-color: white;
+}
+
+.auth-form div div{
     display: flex;
     justify-content: center;
     border-radius: 8px;
@@ -53,18 +56,31 @@ body {
     padding: 5px;
 }
 
-.auth-form div .auth-input {
+.auth-form div div .auth-input {
     width: 90%;
     padding: 12px;
     border: 1px solid #ddd;
     font-size: 15px;
     font-family: sans-serif;
+    border-radius: 2px;
 }
 
 .auth-form div .input-icon {
     width: 10%;
     background-color: none;
     font-size: 1.2rem;
+}
+
+.auth-err {
+    color: #dc2626;
+    font-size: 13px;
+    font-style: italic;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 1px;
+}
+
+.auth-form div .input-icon:hover {
+    transform: scale(1.2);
 }
 
 .auth-button {
@@ -81,20 +97,20 @@ body {
     margin-right: 320px;
 }
 
-.auth-button::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #007BFF, #FFD700);
-    transition: width 0.3s ease;
+.auth-button:hover {
+    transform: scale(.98);
+    background: #ffd900d3;
 }
 
-.auth-button:hover::after {
-    width: 90%;
-    margin-left: 30px;
+.links{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.links:hover{
+    text-decoration: underline;
+    color: #2600ffa2;
 }
 
 @media (max-width: 768px) {

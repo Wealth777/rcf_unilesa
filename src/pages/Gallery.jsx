@@ -23,6 +23,36 @@ import image17 from "../assets/group 3 (35).JPG";
 import image18 from "../assets/G-2 (3).jpg";
 import image19 from "../assets/G-1 (29).jpg";
 import image20 from "../assets/eer (1).JPG";
+import image22 from '../assets/WhatsApp Image 2025-11-16 at 12.08.52_839c56bf.jpg'
+import image21 from '../assets/WhatsApp Image 2025-05-04 at 12.26.44_fa532e08.jpg'
+import image23 from '../assets/WhatsApp Image 2025-05-18 at 11.48.35_06f7f944.jpg'
+import image24 from '../assets/WhatsApp Image 2025-11-30 at 12.25.11_78de6ea9.jpg'
+import image25 from '../assets/WhatsApp Image 2025-11-30 at 12.25.13_51a88800.jpg'
+import image26 from '../assets/WhatsApp Image 2025-11-30 at 12.25.54_c79dcd44.jpg'
+import image27 from '../assets/WhatsApp Image 2025-11-30 at 12.25.55_bfbd087e.jpg'
+import image28 from '../assets/WhatsApp Image 2025-11-30 at 12.25.55_d2b436c0.jpg'
+import image29 from '../assets/WhatsApp Image 2025-11-30 at 12.25.58_d7a687ac.jpg'
+import image30 from '../assets/WhatsApp Image 2025-11-30 at 12.27.09_9a906d3b.jpg'
+import image31 from '../assets/WhatsApp Image 2025-11-30 at 12.27.11_b973a4f7.jpg'
+import image32 from '../assets/WhatsApp Image 2025-11-30 at 12.27.12_302309f5.jpg'
+import image33 from '../assets/WhatsApp Image 2025-11-30 at 12.27.13_e46a963b.jpg'
+import image34 from '../assets/WhatsApp Image 2025-11-30 at 12.27.17_ce733488.jpg'
+import image35 from '../assets/WhatsApp Image 2025-11-30 at 12.27.34_feee8d4c.jpg'
+import image36 from '../assets/WhatsApp Image 2025-11-16 at 12.09.04_dcaa3a63.jpg'
+import image37 from '../assets/WhatsApp Image 2025-11-30 at 12.27.55_95f2c4a7.jpg'
+import image38 from '../assets/WhatsApp Image 2025-11-23 at 12.07.26_2ddb591c.jpg'
+import image39 from '../assets/WhatsApp Image 2025-11-23 at 12.07.29_4e7567c5.jpg'
+import image40 from '../assets/WhatsApp Image 2025-11-23 at 12.07.30_c8c76094.jpg'
+import image41 from '../assets/WhatsApp Image 2025-11-23 at 12.14.05_9e4b35fc.jpg'
+import image42 from '../assets/WhatsApp Image 2025-11-23 at 12.14.08_697075cd.jpg'
+import image43 from '../assets/WhatsApp Image 2025-11-23 at 12.14.08_dc91abfd.jpg'
+import image44 from '../assets/WhatsApp Image 2025-11-23 at 12.26.59_b0456d4c.jpg'
+import image45 from '../assets/WhatsApp Image 2025-11-23 at 12.28.44_8a4c60d0.jpg'
+import image46 from '../assets/WhatsApp Image 2025-11-23 at 12.39.11_f7ca2978.jpg'
+import image47 from '../assets/WhatsApp Image 2025-11-23 at 12.28.44_f8fa672e.jpg'
+import image48 from '../assets/WhatsApp Image 2025-11-23 at 12.28.45_5f63da37.jpg'
+import image49 from '../assets/WhatsApp Image 2025-11-23 at 12.28.46_fb258c64.jpg'
+import image50 from '../assets/WhatsApp Image 2025-11-23 at 12.28.47_2b6d0795.jpg'
 
 // const video = [
   
@@ -30,7 +60,7 @@ import image20 from "../assets/eer (1).JPG";
 
 const images = [
   image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12,
-   image13, image14, image15, image16, image17, image18, image19, image20 
+   image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23,image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36, image37, image38, image39, image40, image41, image42, image43, image44, image45, image46, image47, image48, image49, image50
 ];
 
 export default function Gallery() {

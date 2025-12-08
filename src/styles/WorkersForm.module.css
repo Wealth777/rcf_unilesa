@@ -26,9 +26,50 @@
   gap: 14px;
 }
 
+.formcont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 .group {
   display: flex;
   flex-direction: column;
+}
+
+.profileimage {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+.profileimage input[type="file"] {
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    width: 100%;
+    cursor: pointer;
+}
+
+.settings-profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
 
 .group label {
@@ -97,9 +138,11 @@ textarea {
 .confirm{
     padding-left: 15px;
     padding-top: -10px !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .9rem;
 }
 
-.submit {
+.workformsubmit {
   padding: 10px 20px;
   background: #FFD700;
   color: white;
@@ -111,26 +154,21 @@ textarea {
   transition: all 0.3s ease;
 }
 
-
-.submit::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #007BFF, #FFD700);
-  transition: width 0.3s ease;
-}
-
-.submit:hover::after {
-  width: 98%;
+.workformsubmit:hover {
+  transform: scale(.95);
 }
 
 
 
+@media (max-width: 550px) {
+  .confirm{
+    font-size: .6rem;
+    padding-top: -70px !important;
+  }
+}
 @media (max-width: 420px) {
-  .wrapper { margin: 20px 12px; padding: 18px; }
+  .wrapper { margin: 20px 12px; padding: 18px; margin-top: 130px; }
+
 }
 
 .group input::placeholder, .group textarea::placeholder {

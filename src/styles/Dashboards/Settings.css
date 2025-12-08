@@ -50,11 +50,52 @@
     flex-direction: column;
     gap: 28px;
 }
-
+/* 
 .settings-profile-group {
     display: flex;
     gap: 20px;
+} */
+
+
+.settings-profile-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* width: 100%; */
 }
+
+.settings-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-field-gender {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.err {
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 4px;
+    height: 16px;
+    display: block;
+    font-style: italic;
+    font-family: "Nunito", sans-serif;
+}
+
+.err-gen {
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: -10px;
+    height: 16px;
+    display: block;
+    font-style: italic;
+    font-family: "Nunito", sans-serif;
+}
+
 
 .settings-profile-group input {
     width: 100%;
@@ -102,12 +143,27 @@
         padding: 25px;
     }
 
+    .settings-profile {
+        width: 100% !important;
+        margin-top: -20px;
+    }
+
     .settings-profile-image {
         width: 100%;
     }
 
     .settings-profile-group {
         flex-direction: column;
+        width: 100% !important;
+    }
+
+    .settings-field-gender {
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .err, .err-gen{
+        text-align: center;
     }
 
     .settings-submit {

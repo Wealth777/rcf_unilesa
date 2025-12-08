@@ -89,7 +89,7 @@ Our workforce stands united. Every department serves with purpose. Every worker 
           </div>
         </div>
 
-        <div className="container  leaders-section1">
+        <div className="container  about-section">
           <h2 className='leaers-card-titile'>Our Leader</h2>
           <div className="leaders-grid">
             <div className="leader-card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">

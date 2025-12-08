@@ -20,6 +20,8 @@ import WorkersForm from './pages/WorkersForm'
 import Settings from './pages/Dashboards/Settings'
 import NewsUpload from './pages/Dashboards/NewsUpload'
 import ProgramUpload from './pages/Dashboards/ProgramUpload'
+import Applications from './pages/Dashboards/Applications'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -51,6 +53,7 @@ function App() {
 
   return (
     <>
+    <Toaster position="top-center" toastOptions={{ duration: 4000, style: { zIndex: 999999 } }} />
       {!isAdminRoute && <Navbar />}
 
       <Routes>
@@ -91,6 +94,7 @@ function App() {
                     <Route path="" element={<Dashboard />} />
                     <Route path="dashboard" element={<Dashboard />} />
                     <Route path="profile" element={<Settings />} />
+                    <Route path="applications" element={<Applications />} />
                     <Route path="upload/news" element={<NewsUpload />} />
                     <Route path="upload/program" element={<ProgramUpload />} />
 
