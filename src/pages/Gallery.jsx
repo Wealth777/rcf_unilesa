@@ -96,6 +96,8 @@ export default function Gallery() {
         </motion.div>
       </section>
 
+      <motion />
+
 
         {/* <section className="gallery-section container">
           <motion.div
