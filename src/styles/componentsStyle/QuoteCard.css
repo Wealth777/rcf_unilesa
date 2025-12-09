@@ -1,7 +1,7 @@
 .quote-carousel {
   width: 100%;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+  background: white;
   color: #fff;
   overflow: hidden;
 }
@@ -11,7 +11,7 @@
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #fff !important;
+  color: navy !important;
 }
 
 .carousel-container {
@@ -25,9 +25,9 @@
 
 .quote-card {
   flex: 0 0 320px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #FFD700;
+  /* backdrop-filter: blur(12px); */
+  border: 1px solid rgba(0, 0, 0, 0.527);
   border-radius: 20px;
   overflow: hidden;
   scroll-snap-align: start;
@@ -80,7 +80,7 @@
 
 .quote-text {
   font-size: 1rem;
-  color: #fff;
+  color: white;
   font-style: italic;
   margin-bottom: 10px;
 }

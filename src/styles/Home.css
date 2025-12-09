@@ -5,24 +5,35 @@
   margin-top: 86.4px;
 }
 
-.carousel-inner img {
+.carousel-item {
+  position: relative;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.486));
+  z-index: 2;
+}
+
+.carousel-item img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 70vh;
   object-fit: cover;
 }
 
-
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  z-index: 3;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* color: rgb(245, 8, 8); */
-  text-shadow: 0 2px 8px #22c55e;
-  padding: 1rem;
-  width: 90%;
-  max-width: 800px;
   font-family: sans-serif;
 }
 
@@ -35,6 +46,7 @@
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  margin-top: 10%;
 }
 
 .carousel-caption h3 {
@@ -42,7 +54,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: #FFD700;
-  text-shadow: 0 4px 15px #22c55e;
+  text-shadow: 0 4px 8px #22c55e;
 
 }
 
@@ -74,7 +86,7 @@
 }
 
 .works .work-cont {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
 }
@@ -102,6 +114,7 @@
 .work-cont div h5 {
   color: wheat;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .work-cont button {
@@ -212,18 +225,6 @@
   transition: all 0.4s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .accordion-button {
-    font-size: 1rem;
-    padding: 0.9rem 1rem;
-  }
-
-  .accordion-body {
-    font-size: 0.95rem;
-  }
-}
-
-
 @media (max-width: 992px) {
   .carousel {
     height: 60vh;
@@ -262,7 +263,6 @@
   }
 
   .carousel-caption {
-    width: 95%;
     padding: 0.5rem;
   }
 
@@ -284,7 +284,6 @@
   }
 
   .work-cont div {
-    /* flex-direction: column; */
     align-items: center;
     gap: 1.5rem;
   }
@@ -292,6 +291,15 @@
   .work-cont button {
     width: 60%;
     float: none;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.95rem;
   }
 }
 

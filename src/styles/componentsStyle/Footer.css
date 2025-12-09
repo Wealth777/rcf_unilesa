@@ -1,11 +1,10 @@
 .footer {
-  background: linear-gradient(135deg, #2563EB, #581C87);
+  background: linear-gradient(135deg, #2563EB, #110de0) !important;;
   color: white;
   width: 100%;
   padding: 3rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
-  /* bottom: ; */
 }
 
 .footer-container {

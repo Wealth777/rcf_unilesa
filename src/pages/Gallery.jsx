@@ -95,39 +95,8 @@ export default function Gallery() {
           ))}
         </motion.div>
       </section>
-
       <motion />
 
-
-        {/* <section className="gallery-section container">
-          <motion.div
-            className="header"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h3>🎥 Our Videos</h3>
-            <p>Watch highlights and messages from our past gatherings</p>
-          </motion.div>
-
-          <motion.div
-            className="videos-grid"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 1 }}
-          >
-            {[...Array(3)].map((_, i) => (
-              <motion.div
-                className="video-card"
-                key={i}
-                whileHover={{ scale: 1.03 }}
-                transition={{ type: "spring", stiffness: 120 }}
-              >
-                <video src={video} controls />
-              </motion.div>
-            ))}
-          </motion.div>
-        </section> */}
     </main>
   );
 }

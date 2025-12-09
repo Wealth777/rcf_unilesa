@@ -3,6 +3,7 @@ import '../styles/componentsStyle/EventCard.css'
 import { Link } from "react-router-dom";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import carol from '../assets/carol.jpg'
 
 const events = [
   {
@@ -30,7 +31,7 @@ const events = [
     date: "Nov 15, 2025",
     time: "5pm - 6pm",
     venue: "RCF AUDITORIUM",
-    imageUrl: "",
+    imageUrl: carol,
   },
 ];
 // const events = [

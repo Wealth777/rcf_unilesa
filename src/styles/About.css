@@ -60,6 +60,14 @@
   font-weight: 600;
 }
 
+.about-section h4 {
+  font-size: 1.2rem;
+  color: navy !important;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
 .about-section p {
   line-height: 1.8;
   font-size: 1rem;
@@ -95,7 +103,7 @@
   width: 350px;
   height: auto;
   border-radius: 20px;
-  background: rgba(0, 0, 128, 0.226) !important;
+  background: rgba(f, f, f, 0.226) !important;
   backdrop-filter: blur(12px);
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -122,6 +130,7 @@
   font-family: sans-serif;
   color: navy;
   font-weight: 600;
+  text-shadow: 0 2px 4px white;
 }
 
 .leader-card div p {
@@ -129,6 +138,7 @@
   margin-top: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
+  color: #000 !important;
 }
 
 .leader-card div .p2 {
@@ -144,7 +154,7 @@
 }
 
 .leader-info h3 {
-  color: #38bdf8;
+  color: #000;
   margin-bottom: 4px;
 }
 

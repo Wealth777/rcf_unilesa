@@ -22,6 +22,7 @@ export default function WorkersForm() {
       saved: '',
       salvationStory: '',
       baptized: '',
+      holySpiritbaptized: '',
       unit: '',
       reason: '',
       relationship: '',
@@ -42,6 +43,7 @@ export default function WorkersForm() {
       saved: yup.string().required('This field is required'),
       salvationStory: yup.string().required('Salvation Story is required'),
       baptized: yup.string().required('This field is required'),
+      holySpiritbaptized: yup.string().required('This field is required'),
       unit: yup.string().required('Unit is required'),
       reason: yup.string().required('Reason is required'),
       relationship: yup.string().required('Relationship Status is required'),
@@ -265,6 +267,18 @@ export default function WorkersForm() {
               onChange={formik.handleChange}
             />
             <p>{formik.touched.baptized && formik.errors.baptized ? <span style={{ color: 'red', fontSize: '10px' }}>{formik.errors.baptized}</span> : ''}</p>
+          </div>
+
+          <div className={styles.group}>
+            <label>Spirit Baptized</label>
+            <input
+              type="text"
+              name="holySpiritbaptized"
+              value={formik.values.holySpiritbaptized}
+              onBlur={formik.handleBlur}
+              onChange={formik.handleChange}
+            />
+            <p>{formik.touched.holySpiritbaptized && formik.errors.holySpiritbaptized ? <span style={{ color: 'red', fontSize: '10px' }}>{formik.errors.holySpiritbaptized}</span> : ''}</p>
           </div>
 
           <div className={styles.group}>

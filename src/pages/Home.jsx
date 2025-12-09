@@ -3,8 +3,9 @@ import '../styles/Home.css'
 import EventsCard from '../components/EventsCard'
 import QuoteCard from '../components/QuoteCard'
 import carouselImg2 from '../assets/DSC_0002a (23).JPG'
-import carouselImg3 from '../assets/20250219_203324.png'
+import carouselImg3 from '../assets/WhatsApp Image 2025-11-30 at 12.25.55_bfbd087e.jpg'
 import carouselImg4 from '../assets/WhatsApp Image 2025-11-16 at 12.08.52_839c56bf.jpg'
+import carouselImg1 from '../assets/WhatsApp Image 2025-11-30 at 12.27.12_302309f5.jpg'
 import carouselImg5 from '../assets/WhatsApp Image 2025-05-04 at 12.26.44_fa532e08.jpg'
 import carouselImg6 from '../assets/WhatsApp Image 2025-05-18 at 11.48.35_06f7f944.jpg'
 import { Link } from 'react-router-dom'
@@ -19,25 +20,30 @@ export default function Home() {
       <div>
         <Carousel controls={false} indicators={false} interval={2000}>
           <Carousel.Item>
+            <div class="carousel-overlay"></div>
             <img src={carouselImg4} text="First slide" />
           </Carousel.Item>
           <Carousel.Item>
+            <div class="carousel-overlay"></div>
             <img src={carouselImg2} text="Second slide" />
           </Carousel.Item>
           <Carousel.Item>
+            <div class="carousel-overlay"></div>
             <img src={carouselImg5} text="Third slide" />
           </Carousel.Item>
           <Carousel.Item>
+            <div class="carousel-overlay"></div>
             <img src={carouselImg6} text="Fourth slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={carouselImg2} text="Firth slide" />
+            <div class="carousel-overlay"></div>
+            <img src={carouselImg1} text="Firth slide" />
           </Carousel.Item>
           <Carousel.Item>
+            <div class="carousel-overlay"></div>
             <img src={carouselImg3} text="Sixth slide" />
           </Carousel.Item>
         </Carousel>
-
         <Carousel.Caption>
           <h5>THE REDEEMED CHRISTAIN FELLOWSHIP</h5>
           <p>University of Ilesa Chapter</p>
@@ -73,14 +79,14 @@ export default function Home() {
             <h5>Media Unit</h5>
             <h5>Decoration Unit</h5>
             <h5>Choir Unit (Voice Of Redeemtion)</h5>
-            <h5>Biblr Study Unit</h5>
+            <h5>Bible Study Unit</h5>
             <h5>Welfare Unit</h5>
             <h5>Protocol Unit</h5>
             <h5>Editorial Unit</h5>
             <h5>Follow-Up Unit</h5>
             <h5>Prayer Unit</h5>
             <h5>Envagelisim Unit</h5>
-            <h5>Accademic Unit</h5>
+            <h5>Academic Unit</h5>
             <h5>Technical Unit</h5>
             <h5>Sanitation Unit</h5>
             <h5>Ushering Unit</h5>
@@ -179,7 +185,7 @@ export default function Home() {
       </div>
 
       <EventsCard />
-      <QuoteCard />
+      {/* <QuoteCard /> */}
       <NewsCards />
       <ContactCard />
     </>
