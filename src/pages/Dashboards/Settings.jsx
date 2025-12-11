@@ -4,6 +4,7 @@ import * as yup from 'yup'
 import { useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import axios from 'axios'
+import Button from '../../components/Button'
 
 export default function Settings() {
     const [preview, setPreview] = useState(null)
@@ -288,9 +289,7 @@ export default function Settings() {
                         </div>
                     </div>
 
-                    <button className='settings-submit' type='submit'>
-                        Save Changes
-                    </button>
+                    <Button type='submit' text='Save Changes' />
                 </div>
             </form>
         </div>

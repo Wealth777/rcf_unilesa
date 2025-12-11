@@ -9,6 +9,7 @@ import { useFormik } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
+import Button from '../../components/Button';
 
 export default function AdminSignup() {
 
@@ -151,8 +152,7 @@ export default function AdminSignup() {
                         <p className="auth-err">{formik.touched.confirmPassword && formik.errors.confirmPassword ? <small>{formik.errors.confirmPassword}</small> : ''} </p>
                     </div>
 
-                    <button className="auth-button" type='submit'>Create Account</button>
-
+                    <Button type='submit' text='Create Account' />
                     <p>Already has an account? <Link className='links' to={'/admin/signin'}>Login</Link></p>
                 </form>
             </div>

@@ -117,17 +117,12 @@
   font-weight: 600;
 }
 
-.work-cont button {
-  margin-top: 2rem;
-  padding: 10px 20px;
-  background: #FFD700;
-  color: white;
-  border: none;
-  border-radius: 40px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+/* .work-cont button {
+border-radius: 14px;
+background: linear-gradient(145deg, #ffe600, #e6c200);
+box-shadow:  2px 4px 6px #f0ca00,
+             -1px -1px 6px #ffe400; 
+
 }
 
 .work-cont button::after {
@@ -142,16 +137,16 @@
 }
 
 .work-cont button:hover::after {
-  width: 80%;
-  margin-left: 15px;
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
-.work-cont button:hover {
+.work-cont-btn:hover {
   transform: translateY(-5px);
-  background: #000000;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   color: white;
-}
+
+} */
 
 .accpectChrist {
   width: 100%;

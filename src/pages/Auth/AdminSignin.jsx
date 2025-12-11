@@ -9,6 +9,7 @@ import * as yup from 'yup'
 import { useFormik } from 'formik';
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
+import Button from '../../components/Button';
 
 export default function AdminSignin() {
 
@@ -36,7 +37,7 @@ export default function AdminSignin() {
                 navigate('/admin/')
             } catch (err) {
                 // console.log(err)
-                toast.error(`Error creating account: ${err.response?.data?.message || err.message}`)
+                toast.error(`Error loggining in: ${err.response?.data?.message || err.message}`)
             }
         },
         validationSchema: yup.object({
@@ -85,15 +86,13 @@ export default function AdminSignin() {
                         <p className='auth-err'>{formik.touched.password && formik.errors.password ? <small>{formik.errors.password}</small> : ''} </p>
                     </div>
 
-                    <p><Link className='links' to={'/admin/forget-password'}>Forget Password</Link></p>
+                    <p><Link className='links' to={'/admin/forget-password'}>Forget Password?</Link></p>
 
-                    <button className="auth-button" type='submit'>Login</button>
+                    <Button type='submit' text='Login' />
 
                     <p>I don't have an account <Link className='links' to={'/admin/signup'}>Register</Link></p>
                 </form>
             </div>
         </div>
-
-
     );
 };

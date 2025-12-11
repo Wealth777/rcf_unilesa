@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/Dashboards/Dashboard.css'
 import toast, { Toaster } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
+import Button from '../../components/Button'
 
 export default function Dashboard() {
 
@@ -19,7 +20,7 @@ export default function Dashboard() {
     <Toaster position="top-center" toastOptions={{duration: 4000}}/>
       <div className="dashboard-header">
         <h2>Dashboard</h2>
-        <button className="upload-btn">Upload Media</button>
+        <Button text='Upload Media' />
       </div>
 
       <div className="stats-grid">

@@ -100,45 +100,9 @@
 .carousel-container::-webkit-scrollbar {
     display: none;
 }
-
-.See-more {
-    padding: 5px;
-    background: #FFD700;
-    color: white;
-    border-radius: 40px;
-    height: 40px;
-    width: 100px;
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    float: right;
-    margin-right: 320px;
+.button-cont{
+    margin-right: 310px;
 }
-
-.See-more::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #007BFF, #FFD700);
-    transition: width 0.3s ease;
-}
-
-.See-more:hover::after {
-    width: 80%;
-    margin-left: 15px;
-}
-
-.See-more:hover {
-    transform: translateY(-5px);
-    background: #222;
-    transition: transform 0.3s ease, color 0.3s ease;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    color: rgb(255, 255, 255);
-}
-
 
 @media (max-width: 768px) {
     .event-card {
@@ -193,9 +157,5 @@
 
     .event-card {
         flex: 0 0 55%;
-    }
-
-    .See-more {
-        margin-right: 19px;
     }
 }

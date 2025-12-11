@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
 import ContactCard from '../components/ContactCard'
 import Carousel from 'react-bootstrap/Carousel';
 import NewsCards from '../components/NewsCards'
+import Button from '../components/Button'
 
 
 export default function Home() {
@@ -91,7 +92,7 @@ export default function Home() {
             <h5>Sanitation Unit</h5>
             <h5>Ushering Unit</h5>
           </div>
-          <Link to={'/join.work.force'}> <button>Join Work Force</button> </Link>
+          <Link to={'/join.work.force'}> <Button text="Join Work Force" /> </Link>
         </div>
       </div>
 

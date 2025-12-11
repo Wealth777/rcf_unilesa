@@ -2,6 +2,7 @@ import React from 'react'
 import { useFormik } from 'formik'
 import * as yup from 'yup'
 import '../../styles/Dashboards/Upload.modules.css'
+import Button from '../../components/Button'
 
 export default function NewsUpload() {
 
@@ -100,10 +101,7 @@ export default function NewsUpload() {
                     />
                 </label>
 
-                <button type="submit" className="upload-submit-btn">
-                    Submit News
-                </button>
-
+                <Button type="submit" text='Submit News' />
             </form>
         </div>
     )

@@ -1,13 +1,71 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/Event.css'
-import img from '../assets/DSC_0002a (23).JPG'
-import broAndSis from '../assets/WhatsApp Image 2025-12-08 at 11.11.38_d32badff.jpg'
-import carol from '../assets/carol.jpg'
+import axios from 'axios'
 
 export default function Events() {
+
+  const [formData, setForData] = useState([])
+
+  const fetchProgrammes = async () => {
+    try {
+      const res = await axios.get('http://localhost:9000/api/admin/published/programmes')
+
+      console.log(res.data?.data || [])
+      setForData(res.data?.data || [])
+    } catch (err) {
+      console.log(err.response?.data?.message || err.message)
+    }
+  }
+
+  useEffect(() => {
+    fetchProgrammes()
+  }, [])
+
   return (
     <>
       <main className='event'>
+        <div className="container events-page">
+
+          {formData.map((item, i) => (
+            <div key={i}>
+              <article className='event-card'>
+                <div className='event-img-wrapper'>
+                  <img className='img' src={item.programImage} alt={item.title} />
+                </div>
+
+                <div className='event-content'>
+                  <h3>{item.title}</h3>
+                  <div className="event-description">
+                    <p>{item.programBody}</p>
+                  </div>
+
+                  <div className='event-meta-grid'>
+                    <div className="meta-item">
+                      <h6>Date</h6>
+                      <p>{item.programDate ? item.programDate.split("T")[0] : ""}</p>
+                    </div>
+                    <div className="meta-item">
+                      <h6>Time</h6>
+                      <p>{item.programTime}</p>
+                    </div>
+                    <div className="meta-item">
+                      <h6>Location</h6>
+                      <p>{item.programLocation}</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          ))}
+
+        </div>
+      </main>
+    </>
+  )
+}
+
+
+{/* <main className='event'>
         <div className="container events-page">
           <div className='events1'>
             <div className='events-img-cont'>
@@ -32,7 +90,6 @@ export default function Events() {
                   <p>RCF AUDITORIUM</p>
                 </div>
               </div>
-              {/* <button>Read More</button> */}
             </div>
           </div>
 
@@ -59,7 +116,6 @@ export default function Events() {
                   <p>RCF AUDITORIUM</p>
                 </div>
               </div>
-              {/* <button>Read More</button> */}
             </div>
           </div>
           
@@ -86,7 +142,6 @@ export default function Events() {
                   <p>RCF AUDITORIUM</p>
                 </div>
               </div>
-              {/* <button>Read More</button> */}
             </div>
           </div>
 
@@ -119,7 +174,6 @@ export default function Events() {
                   <p>RCF AUDITORIUM</p>
                 </div>
               </div>
-              {/* <button>Read More</button> */}
             </div>
           </div>
 
@@ -150,72 +204,10 @@ It’s not just an event — it’s a FAMILY EXPERIENCE! ❤
                 </div>
                 <div>
                   <h6>Location</h6>
-                  <p>RCF AUDITORIUM</p>
+                  <p>RCF AUDITORIUMRCF AUDITORIUM</p>
                 </div>
               </div>
-              {/* <button>Read More</button> */}
             </div>
           </div>
-
-          {/* <div className='events1'>
-                <div className='events-img-cont'>
-                  <img src={img} alt="" />
-                </div>
-
-                <div>
-                  <h3>Event Name</h3>
-                  <h4>Event Theme</h4>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi doloremque asperiores quae sapiente ipsa rem reprehenderit, tempore perspiciatis vitae sint magnam exercitationem voluptate odit quisquam. Soluta unde vitae aspernatur!</p>
-
-                  <div className='Date-cont'>
-                    <div>
-                      <h6>Date</h6>
-                      <p>Date</p>
-                    </div>
-                    <div>
-                      <h6>Time</h6>
-                      <p>Date</p>
-                    </div>
-                    <div>
-                      <h6>Location</h6>
-                      <p>Date</p>
-                    </div>
-                  </div>
-                    <button>Read More</button>
-                </div>
-            </div>
-
-            <div className='events1'>
-                <div className='events-img-cont'>
-                  <img src={img} alt="" />
-                </div>
-
-                <div>
-                  <h3>Event Name</h3>
-                  <h4 className='Title'>Event Theme</h4>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi doloremque asperiores quae sapiente ipsa rem reprehenderit, tempore perspiciatis vitae sint magnam exercitationem voluptate odit quisquam. Soluta unde vitae aspernatur!</p>
-
-                  <div className='Date-cont'>
-                    <div>
-                      <h6>Date</h6>
-                      <p>Date</p>
-                    </div>
-                    <div>
-                      <h6>Time</h6>
-                      <p>Date</p>
-                    </div>
-                    <div>
-                      <h6>Location</h6>
-                      <p>Date</p>
-                    </div>
-                  </div>
-                    <button>Read More</button>
-                </div>
-            </div> */}
-
         </div>
-      </main>
-    </>
-  )
-}
-
+      </main> */}

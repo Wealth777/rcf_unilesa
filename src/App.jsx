@@ -53,7 +53,7 @@ function App() {
 
   return (
     <>
-    <Toaster position="top-center" toastOptions={{ duration: 4000, style: { zIndex: 999999 } }} />
+    {/* <Toaster position="top-center" toastOptions={{ duration: 4000, style: { zIndex: 999999 } }} /> */}
       {!isAdminRoute && <Navbar />}
 
       <Routes>

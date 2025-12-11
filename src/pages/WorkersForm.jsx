@@ -4,6 +4,7 @@ import { useFormik } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
+import Button from '../components/Button'
 
 export default function WorkersForm() {
   const [preview, setPreview] = React.useState(null)
@@ -74,7 +75,7 @@ export default function WorkersForm() {
           }
         )
 
-        // Create file download
+        toast.success('Application Successfully')
         const url = window.URL.createObjectURL(new Blob([res.data]))
         const link = document.createElement("a")
         link.href = url
@@ -83,7 +84,7 @@ export default function WorkersForm() {
         link.click()
       } catch (err) {
         // console.log(err);
-        toast.error(`Error registring: ${err.response?.data?.message || err.message}`)
+        toast.error(`Error applying: ${err.response?.data?.message || err.message}`)
       }
     }
 
@@ -342,7 +343,7 @@ export default function WorkersForm() {
           </div>
 
         </div>
-        <button type="submit" className={styles.workformsubmit}>Submit</button>
+        <Button type="submit" text='Submit' />
       </form>
     </div>
   )

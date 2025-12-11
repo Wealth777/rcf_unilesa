@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import carol from '../assets/carol.jpg'
+import Button from "./Button";
 
 const events = [
   {
@@ -90,7 +91,9 @@ const EventsCard = () => {
           </div>
         ))}
       </div>
-      <Link to={'/events'}><button className="See-more"><span>See More</span></button></Link>
+      <div className="button-cont">
+        <Link to={'/events'}><Button text='See More' /></Link>
+      </div>
     </section>
   );
 };

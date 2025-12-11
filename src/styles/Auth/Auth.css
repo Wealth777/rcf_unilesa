@@ -7,8 +7,10 @@ body {
 .auth-page {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.85), rgba(88, 28, 135, 0.85)),
+    background: linear-gradient(135deg, #2563EB, #110de0),
         url("/faith-background.jpg");
+    /* background: linear-gradient(135deg, rgba(37, 99, 235, 0.85), rgba(88, 28, 135, 0.85)),
+        url("/faith-background.jpg"); */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -19,7 +21,7 @@ body {
 .auth-container {
     width: 600px;
     padding: 35px;
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.205);
     backdrop-filter: blur(12px);
     border-radius: 12px;
     text-align: center;
@@ -32,8 +34,9 @@ body {
 }
 
 .auth-title {
-    color: navy;
-    font-size: 22px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -83,25 +86,6 @@ body {
     transform: scale(1.2);
 }
 
-.auth-button {
-    padding: 5px;
-    background: #FFD700;
-    color: white;
-    border-radius: 20px;
-    height: 50px;
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    float: right;
-    margin-right: 320px;
-}
-
-.auth-button:hover {
-    transform: scale(.98);
-    background: #ffd900d3;
-}
-
 .links{
     text-decoration: none;
     color: #fff;
@@ -110,7 +94,7 @@ body {
 
 .links:hover{
     text-decoration: underline;
-    color: #2600ffa2;
+    color: #2600ff;
 }
 
 @media (max-width: 768px) {

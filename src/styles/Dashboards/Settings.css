@@ -119,22 +119,6 @@
     font-size: 15px;
 }
 
-.settings-submit {
-    padding: 15px;
-    border: none;
-    background: #2f67ff;
-    color: white;
-    border-radius: 10px;
-    font-size: 17px;
-    cursor: pointer;
-    width: 220px;
-    transition: background 0.2s ease;
-}
-
-.settings-submit:hover {
-    background: #244ed4;
-}
-
 
 @media (max-width: 820px) {
     .settings-card-container {
